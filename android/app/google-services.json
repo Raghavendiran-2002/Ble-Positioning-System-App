@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "390019752284",
+    "project_id": "ble-positioning-system",
+    "storage_bucket": "ble-positioning-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390019752284:android:425e95f6b52a2d6aa8e199",
+        "android_client_info": {
+          "package_name": "com.raghavBLE.ble_positioning_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390019752284-8i2pburio482ascapl2b96k4jsg4vddf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoYAsax1IrXvCzj0TS2St66FmOqrH4EBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390019752284-8i2pburio482ascapl2b96k4jsg4vddf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
