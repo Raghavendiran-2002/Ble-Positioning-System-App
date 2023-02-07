@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-24:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/6d59c5aad4a64fd0908a64a99be63004/transformed/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

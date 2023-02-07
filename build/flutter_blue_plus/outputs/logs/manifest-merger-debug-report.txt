@@ -1,0 +1,49 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:1:1-14:12
+INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:1:1-14:12
+INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:1:1-14:12
+	package
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:2:3-42
+		INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:7:5-73
+	android:name
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:7:22-70
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:11:5-95
+	android:maxSdkVersion
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:11:66-92
+	android:name
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:11:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:12:5-101
+	android:maxSdkVersion
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:12:72-98
+	android:name
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:12:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:13:22-76
+uses-sdk
+INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+		ADDED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml

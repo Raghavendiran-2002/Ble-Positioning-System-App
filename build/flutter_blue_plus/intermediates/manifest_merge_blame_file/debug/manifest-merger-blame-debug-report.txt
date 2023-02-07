@@ -1,0 +1,39 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.boskokg.flutter_blue_plus" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="19"
+6-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="19" />
+7-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml
+8
+9    <!--
+10         New Bluetooth permissions in Android 12
+11           https://developer.android.com/about/versions/12/features/bluetooth-permissions
+12    -->
+13    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+13-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:7:5-73
+13-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:7:22-70
+14    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+14-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:8:5-76
+14-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:8:22-73
+15
+16    <!-- Request legacy Bluetooth permissions on older devices. -->
+17    <uses-permission
+17-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:11:5-95
+18        android:name="android.permission.BLUETOOTH"
+18-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:11:22-65
+19        android:maxSdkVersion="30" />
+19-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:11:66-92
+20    <uses-permission
+20-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:12:5-101
+21        android:name="android.permission.BLUETOOTH_ADMIN"
+21-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:12:22-71
+22        android:maxSdkVersion="30" />
+22-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:12:72-98
+23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+23-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:13:5-79
+23-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/AndroidManifest.xml:13:22-76
+24
+25</manifest>

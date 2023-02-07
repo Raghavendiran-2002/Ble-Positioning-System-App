@@ -49,6 +49,11 @@ dev_dependencies:
   firebase_core: ^2.4.1
   firebase_auth: ^4.2.5
   cloud_firestore: ^4.3.1
+  flutter_beacon: ^0.5.1
+  flutter_blue_plus: ^1.0.0
+  get: ^4.6.5
+  geofence_service: ^3.5.0
+
 
 
 # For information on the generic Dart part of this file, see the

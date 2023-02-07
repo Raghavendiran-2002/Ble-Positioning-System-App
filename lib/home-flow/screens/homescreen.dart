@@ -1,3 +1,5 @@
+
+import 'package:ble_positioning_system/home-flow/services/flutter_ble_service.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -8,8 +10,22 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
+
+  @override
+  void initState() {
+    BluetoothPackage.instance.discoverDevice();
+    super.initState();
+  }
+
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return  Placeholder();
+    return SafeArea(child: Scaffold(body: Center(child: Text("Hi")),));
   }
 }
