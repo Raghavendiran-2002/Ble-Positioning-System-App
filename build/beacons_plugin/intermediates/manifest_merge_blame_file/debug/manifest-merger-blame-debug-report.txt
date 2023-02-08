@@ -1,0 +1,85 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.umair.beacons_plugin" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="18"
+6-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="18" />
+7-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.BLUETOOTH" />
+9-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:4:5-68
+9-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:4:22-65
+10    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+10-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:5:5-74
+10-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:5:22-71
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:6:5-79
+11-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:7:5-81
+12-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:8:5-77
+13-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:8:22-74
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:9:5-81
+14-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:10:5-68
+15-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:10:22-65
+16
+17    <uses-feature
+17-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:12:5-14:35
+18        android:name="android.hardware.bluetooth_le"
+18-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:13:9-53
+19        android:required="true" />
+19-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:14:9-32
+20
+21    <application>
+21-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:16:5-41:19
+22        <receiver
+22-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:17:9-19:38
+23            android:name="com.umair.beacons_plugin.BeaconsBroadcastReceiver"
+23-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:18:13-77
+24            android:enabled="true" />
+24-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:19:13-35
+25        <receiver
+25-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:21:9-28:20
+26            android:name="com.umair.beacons_plugin.RebootBroadcastReceiver"
+26-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:22:13-76
+27            android:enabled="true"
+27-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:23:13-35
+28            android:exported="true" >
+28-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:24:13-36
+29            <intent-filter>
+29-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:25:13-27:29
+30                <action android:name="android.intent.action.BOOT_COMPLETED" />
+30-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:26:17-79
+30-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:26:25-76
+31            </intent-filter>
+32        </receiver>
+33
+34        <service android:name="com.umair.beacons_plugin.BeaconsDiscoveryService" />
+34-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:30:9-31:79
+34-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:31:13-76
+35        <service
+35-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:33:9-37:38
+36            android:name="org.altbeacon.beacon.service.BeaconService"
+36-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:34:13-70
+37            android:enabled="true"
+37-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:35:13-35
+38            android:isolatedProcess="false"
+38-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:36:13-44
+39            android:label="beacon" />
+39-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:37:13-35
+40        <service
+40-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:38:9-40:38
+41            android:name="org.altbeacon.beacon.BeaconIntentProcessor"
+41-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:39:13-70
+42            android:enabled="true" />
+42-->/Users/raghavendiran/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/android/src/main/AndroidManifest.xml:40:13-35
+43    </application>
+44
+45</manifest>

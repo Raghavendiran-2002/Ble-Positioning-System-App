@@ -1,18 +1,14 @@
 -- Merging decision tree log ---
 application
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:13:5-49:19
-MERGED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-22:19
-MERGED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-22:19
 MERGED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-18:19
-MERGED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-18:19
-MERGED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-22:19
-MERGED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-22:19
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:21:5-43:19
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:21:5-43:19
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:19:5-59:19
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:19:5-59:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
@@ -31,10 +27,6 @@ MERGED from [com.google.android.material:material:1.3.0] /Users/raghavendiran/.g
 MERGED from [com.google.android.material:material:1.3.0] /Users/raghavendiran/.gradle/caches/transforms-3/5eb308ae6b6cc49c7927570f875e85a0/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-location:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8fe33d0b1c0d2ba09e92b95e5791c9d3/transformed/jetified-play-services-location-18.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8fe33d0b1c0d2ba09e92b95e5791c9d3/transformed/jetified-play-services-location-18.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/43637d05f05d1aec7efb5b58ce99c91d/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/43637d05f05d1aec7efb5b58ce99c91d/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/6a298c891cbd6182182a281d641b5ec1/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/6a298c891cbd6182182a281d641b5ec1/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
@@ -47,6 +39,8 @@ MERGED from [androidx.core:core:1.6.0] /Users/raghavendiran/.gradle/caches/trans
 MERGED from [androidx.core:core:1.6.0] /Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/raghavendiran/.gradle/caches/transforms-3/dec4873f746490e203b726d7090bd4b8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/raghavendiran/.gradle/caches/transforms-3/dec4873f746490e203b726d7090bd4b8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/raghavendiran/.gradle/caches/transforms-3/a2856128e94cdfdf5a5299d4bb726a0d/transformed/jetified-timber-4.7.1/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/raghavendiran/.gradle/caches/transforms-3/a2856128e94cdfdf5a5299d4bb726a0d/transformed/jetified-timber-4.7.1/AndroidManifest.xml:7:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] /Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 	android:name
@@ -57,16 +51,11 @@ INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-50:12
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-50:12
 MERGED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-50:12
-MERGED from [:geofence_service] /Users/raghavendiran/Development/MiniProject/MobileApp/build/geofence_service/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-24:12
-MERGED from [:shared_preferences_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-20:12
-MERGED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-24:12
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-25:12
-MERGED from [:flutter_beacon] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_beacon/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-45:12
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:2:1-61:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/4f8a10da11d41b9ccabff01515190014/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
@@ -75,12 +64,12 @@ MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8ffc5025097db0a85dbfcff25ccb715a/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/797ea3c6e2a6056d70d3a480c7b40edf/transformed/jetified-firebase-appcheck-interop-16.1.0/AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:15:1-39:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/fb7f5f2eb39072b111571e0b4426b552/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.3.0] /Users/raghavendiran/.gradle/caches/transforms-3/5eb308ae6b6cc49c7927570f875e85a0/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/f11e81a0a45c8f5182f64da55526d86d/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/cab7c7027f5e114ece47f790ed2ba4d9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/6d59c5aad4a64fd0908a64a99be63004/transformed/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-location:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8fe33d0b1c0d2ba09e92b95e5791c9d3/transformed/jetified-play-services-location-18.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/43637d05f05d1aec7efb5b58ce99c91d/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/b7dd2676f7144db504510e8969da0e8a/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/6a298c891cbd6182182a281d641b5ec1/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/a4e1470a603bddf57cd801c2e2b5b4d4/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
@@ -89,45 +78,38 @@ MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/raghavend
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/4c651872dff08bed4a5a3720d7f3448c/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/392bc883a371b75d457d91422b1fe39d/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.media:media:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/66806a89e8662b6624e8aa4cb1f0a120/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ca962974fbe6b261c17e8b1fa7e2abea/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/f11e81a0a45c8f5182f64da55526d86d/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/cab7c7027f5e114ece47f790ed2ba4d9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.3.2] /Users/raghavendiran/.gradle/caches/transforms-3/de7160e65144471bc16f10f586fbe9e9/transformed/jetified-core-ktx-1.3.2/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.browser:browser:1.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/b709b14b30b77c7fc5e44265a8079b79/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/e513becce0ce1f99f210041696e5e24e/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/9e1e48093d3b3bd99dfc27d4415722d9/transformed/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.browser:browser:1.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c12b9a2e892a3f675f5ec0d3a4e7fd90/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/407443ea90303caf093b0d69bf109c87/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/ca621263c6569ab80d8ed5e3ad19b9ff/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/903d84eb3d220cd71502624b627380a3/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/76cf62c1b1b3420373c956d9e4a7a284/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/12891fde8e62753ea6171aecff76bf88/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/df781f17b09909321263da9ec9829cb8/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/18bbdb164e999a175022e5b83bb18c34/transformed/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c12b9a2e892a3f675f5ec0d3a4e7fd90/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/ca621263c6569ab80d8ed5e3ad19b9ff/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/77e3a54b24228c5a180c7428077d704d/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/ad79ee441fd2797fcb33915c66d89243/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/7e2f100e621865418590dd86294fff2b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/903d84eb3d220cd71502624b627380a3/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/76cf62c1b1b3420373c956d9e4a7a284/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.6.0] /Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/117af839d4b9507b8a83d43a2b0e54be/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ab41171db84c339c3bac8f2c9c35b01e/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/175e6568d26a2ca8f2fcb6f3d9344d5f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/69c89cbb33788ff433938caf26c0f4a9/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ef1453fc09d97d48a387e3347ce85266/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8823ba16c0a64b68969669625d706882/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/raghavendiran/.gradle/caches/transforms-3/dec4873f746490e203b726d7090bd4b8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c2686b2e3ed09914cae82b9198a94352/transformed/jetified-firebase-components-17.0.1/AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e59fb9a62900ddc223c67ed8f306867/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ac12fa86d7559c748dfa0f5bb386ec83/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8823ba16c0a64b68969669625d706882/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/a9a24f9bcf9fca1f04b8a881be1361cc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/559c1e698120b8489adb913898f680f3/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/7a48e48ed5a917de07f632fb841b3469/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e59fb9a62900ddc223c67ed8f306867/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ac12fa86d7559c748dfa0f5bb386ec83/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/abb187d0bf205c6a49137269cc58389b/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/raghavendiran/.gradle/caches/transforms-3/a2856128e94cdfdf5a5299d4bb726a0d/transformed/jetified-timber-4.7.1/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/3795200b4ef80330da39fee63b1e3f99/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:2:1-11:12
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml:1:1-8:12
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml:1:1-8:12
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml:1:1-8:12
@@ -149,6 +131,8 @@ uses-permission#android.permission.BLUETOOTH
 ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:3:5-68
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:10:5-12:36
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:10:5-12:36
 	android:maxSdkVersion
@@ -161,6 +145,8 @@ uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:5-74
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-22:38
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-22:38
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-74
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-74
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:13:5-15:36
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:13:5-15:36
 	android:maxSdkVersion
@@ -171,18 +157,18 @@ MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gr
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:5-80
-MERGED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
-MERGED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-81
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-81
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:17:5-81
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:17:5-81
 	android:name
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:5-78
-MERGED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-79
-MERGED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-79
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:23:5-79
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:23:5-79
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
@@ -191,10 +177,14 @@ ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/sr
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:7:22-82
 uses-permission#android.permission.FOREGROUND_SERVICE
 ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:8:5-77
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
 	android:name
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:8:22-74
 uses-permission#android.permission.WAKE_LOCK
 ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:9:5-68
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-68
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-68
 	android:name
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:9:22-65
 uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
@@ -219,26 +209,16 @@ uses-sdk
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml
-MERGED from [:geofence_service] /Users/raghavendiran/Development/MiniProject/MobileApp/build/geofence_service/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:geofence_service] /Users/raghavendiran/Development/MiniProject/MobileApp/build/geofence_service/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:shared_preferences_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:shared_preferences_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-8:41
-MERGED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-8:41
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_beacon] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_beacon/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_beacon] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_beacon/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:6:5-8:41
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/4f8a10da11d41b9ccabff01515190014/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
@@ -255,18 +235,18 @@ MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/raghav
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/797ea3c6e2a6056d70d3a480c7b40edf/transformed/jetified-firebase-appcheck-interop-16.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/fb7f5f2eb39072b111571e0b4426b552/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/fb7f5f2eb39072b111571e0b4426b552/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.3.0] /Users/raghavendiran/.gradle/caches/transforms-3/5eb308ae6b6cc49c7927570f875e85a0/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.3.0] /Users/raghavendiran/.gradle/caches/transforms-3/5eb308ae6b6cc49c7927570f875e85a0/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/f11e81a0a45c8f5182f64da55526d86d/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/f11e81a0a45c8f5182f64da55526d86d/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/cab7c7027f5e114ece47f790ed2ba4d9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/cab7c7027f5e114ece47f790ed2ba4d9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/6d59c5aad4a64fd0908a64a99be63004/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/6d59c5aad4a64fd0908a64a99be63004/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-location:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8fe33d0b1c0d2ba09e92b95e5791c9d3/transformed/jetified-play-services-location-18.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8fe33d0b1c0d2ba09e92b95e5791c9d3/transformed/jetified-play-services-location-18.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/43637d05f05d1aec7efb5b58ce99c91d/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/43637d05f05d1aec7efb5b58ce99c91d/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/b7dd2676f7144db504510e8969da0e8a/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/b7dd2676f7144db504510e8969da0e8a/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/6a298c891cbd6182182a281d641b5ec1/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
@@ -283,46 +263,32 @@ MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/raghavendiran/.gradle/
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/4c651872dff08bed4a5a3720d7f3448c/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/392bc883a371b75d457d91422b1fe39d/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/392bc883a371b75d457d91422b1fe39d/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/66806a89e8662b6624e8aa4cb1f0a120/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/66806a89e8662b6624e8aa4cb1f0a120/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ca962974fbe6b261c17e8b1fa7e2abea/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ca962974fbe6b261c17e8b1fa7e2abea/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/f11e81a0a45c8f5182f64da55526d86d/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/f11e81a0a45c8f5182f64da55526d86d/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/cab7c7027f5e114ece47f790ed2ba4d9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/cab7c7027f5e114ece47f790ed2ba4d9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.3.2] /Users/raghavendiran/.gradle/caches/transforms-3/de7160e65144471bc16f10f586fbe9e9/transformed/jetified-core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.3.2] /Users/raghavendiran/.gradle/caches/transforms-3/de7160e65144471bc16f10f586fbe9e9/transformed/jetified-core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/b709b14b30b77c7fc5e44265a8079b79/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/b709b14b30b77c7fc5e44265a8079b79/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/e513becce0ce1f99f210041696e5e24e/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/e513becce0ce1f99f210041696e5e24e/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/9e1e48093d3b3bd99dfc27d4415722d9/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/9e1e48093d3b3bd99dfc27d4415722d9/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/162e57b214e200a6207c40330426bda2/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c12b9a2e892a3f675f5ec0d3a4e7fd90/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c12b9a2e892a3f675f5ec0d3a4e7fd90/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/407443ea90303caf093b0d69bf109c87/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/407443ea90303caf093b0d69bf109c87/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/ca621263c6569ab80d8ed5e3ad19b9ff/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/ca621263c6569ab80d8ed5e3ad19b9ff/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/903d84eb3d220cd71502624b627380a3/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/903d84eb3d220cd71502624b627380a3/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/76cf62c1b1b3420373c956d9e4a7a284/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/76cf62c1b1b3420373c956d9e4a7a284/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/12891fde8e62753ea6171aecff76bf88/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/12891fde8e62753ea6171aecff76bf88/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/df781f17b09909321263da9ec9829cb8/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/df781f17b09909321263da9ec9829cb8/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/18bbdb164e999a175022e5b83bb18c34/transformed/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/18bbdb164e999a175022e5b83bb18c34/transformed/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c12b9a2e892a3f675f5ec0d3a4e7fd90/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c12b9a2e892a3f675f5ec0d3a4e7fd90/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/ca621263c6569ab80d8ed5e3ad19b9ff/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/ca621263c6569ab80d8ed5e3ad19b9ff/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/77e3a54b24228c5a180c7428077d704d/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/77e3a54b24228c5a180c7428077d704d/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/ad79ee441fd2797fcb33915c66d89243/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/ad79ee441fd2797fcb33915c66d89243/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/7e2f100e621865418590dd86294fff2b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/7e2f100e621865418590dd86294fff2b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/903d84eb3d220cd71502624b627380a3/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/903d84eb3d220cd71502624b627380a3/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/76cf62c1b1b3420373c956d9e4a7a284/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/76cf62c1b1b3420373c956d9e4a7a284/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.6.0] /Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.6.0] /Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/117af839d4b9507b8a83d43a2b0e54be/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
@@ -335,32 +301,32 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/raghavendi
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/69c89cbb33788ff433938caf26c0f4a9/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ef1453fc09d97d48a387e3347ce85266/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ef1453fc09d97d48a387e3347ce85266/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8823ba16c0a64b68969669625d706882/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8823ba16c0a64b68969669625d706882/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/raghavendiran/.gradle/caches/transforms-3/dec4873f746490e203b726d7090bd4b8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/raghavendiran/.gradle/caches/transforms-3/dec4873f746490e203b726d7090bd4b8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c2686b2e3ed09914cae82b9198a94352/transformed/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c2686b2e3ed09914cae82b9198a94352/transformed/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e59fb9a62900ddc223c67ed8f306867/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e59fb9a62900ddc223c67ed8f306867/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ac12fa86d7559c748dfa0f5bb386ec83/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ac12fa86d7559c748dfa0f5bb386ec83/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8823ba16c0a64b68969669625d706882/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8823ba16c0a64b68969669625d706882/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/a9a24f9bcf9fca1f04b8a881be1361cc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/a9a24f9bcf9fca1f04b8a881be1361cc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/559c1e698120b8489adb913898f680f3/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/559c1e698120b8489adb913898f680f3/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/7dad6054ff547c9ccb911d6811560768/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/7a48e48ed5a917de07f632fb841b3469/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/7a48e48ed5a917de07f632fb841b3469/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:5:5-7:41
-MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e59fb9a62900ddc223c67ed8f306867/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e59fb9a62900ddc223c67ed8f306867/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ac12fa86d7559c748dfa0f5bb386ec83/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ac12fa86d7559c748dfa0f5bb386ec83/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/abb187d0bf205c6a49137269cc58389b/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/abb187d0bf205c6a49137269cc58389b/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/raghavendiran/.gradle/caches/transforms-3/a2856128e94cdfdf5a5299d4bb726a0d/transformed/jetified-timber-4.7.1/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/raghavendiran/.gradle/caches/transforms-3/a2856128e94cdfdf5a5299d4bb726a0d/transformed/jetified-timber-4.7.1/AndroidManifest.xml:5:5-43
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/3795200b4ef80330da39fee63b1e3f99/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/3795200b4ef80330da39fee63b1e3f99/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -377,28 +343,6 @@ MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:13:5-67
 	android:name
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml:7:22-64
-receiver#com.pravera.flutter_foreground_task.service.BootReceiver
-ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-17:20
-	android:enabled
-		ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-35
-	android:exported
-		ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-36
-	android:name
-		ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-84
-intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-16:29
-action#android.intent.action.BOOT_COMPLETED
-ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-79
-	android:name
-		ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:15:25-76
-receiver#com.pravera.flutter_foreground_task.service.RestartReceiver
-ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-21:40
-	android:enabled
-		ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-35
-	android:exported
-		ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
-	android:name
-		ADDED from [:flutter_foreground_task] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_foreground_task/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-87
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
@@ -437,36 +381,6 @@ ADDED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileA
 		ADDED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
-service#com.pravera.fl_location.service.LocationServicesStatusIntentService
-ADDED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-17:72
-	android:enabled
-		ADDED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-35
-	android:exported
-		ADDED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
-	android:permission
-		ADDED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-69
-	android:name
-		ADDED from [:fl_location] /Users/raghavendiran/Development/MiniProject/MobileApp/build/fl_location/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-95
-receiver#com.pravera.flutter_activity_recognition.service.ActivityRecognitionIntentReceiver
-ADDED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-15:47
-	android:enabled
-		ADDED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-35
-	android:exported
-		ADDED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-36
-	tools:ignore
-		ADDED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-44
-	android:name
-		ADDED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-110
-service#com.pravera.flutter_activity_recognition.service.ActivityRecognitionIntentService
-ADDED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-21:72
-	android:enabled
-		ADDED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-35
-	android:exported
-		ADDED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-37
-	android:permission
-		ADDED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-69
-	android:name
-		ADDED from [:flutter_activity_recognition] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_activity_recognition/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-109
 uses-permission#android.permission.BLUETOOTH_SCAN
 ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-73
 	android:name
@@ -476,9 +390,65 @@ ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/Mob
 	android:name
 		ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-73
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:16:5-81
+ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-81
+MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:16:5-81
+MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:16:22-78
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-78
+uses-feature#android.hardware.bluetooth_le
+ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:35
+	android:required
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-32
+	android:name
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-53
+receiver#com.umair.beacons_plugin.BeaconsBroadcastReceiver
+ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-24:38
+	android:enabled
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-35
+	android:name
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-77
+receiver#com.umair.beacons_plugin.RebootBroadcastReceiver
+ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-32:20
+	android:enabled
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-35
+	android:exported
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-76
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-79
+	android:name
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-76
+service#com.umair.beacons_plugin.BeaconsDiscoveryService
+ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-84
+	android:name
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:34:18-81
+service#org.altbeacon.beacon.service.BeaconService
+ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-39:38
+MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:30:9-35:38
+MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:30:9-35:38
+	android:enabled
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-35
+	android:label
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:33:13-37
+	android:isolatedProcess
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-44
+	android:name
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-70
+service#org.altbeacon.beacon.BeaconIntentProcessor
+ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-42:38
+MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:36:9-39:40
+MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:36:9-39:40
+	android:enabled
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-70
 receiver#org.altbeacon.beacon.startup.StartupBroadcastReceiver
 ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:20:9-28:20
 	android:exported
@@ -495,26 +465,6 @@ action#android.intent.action.ACTION_POWER_DISCONNECTED
 ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:26:17-90
 	android:name
 		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:26:25-87
-service#org.altbeacon.beacon.service.BeaconService
-ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:30:9-35:38
-	android:enabled
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:32:13-35
-	android:label
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:35:13-35
-	android:exported
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:33:13-37
-	android:isolatedProcess
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:34:13-44
-	android:name
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:31:13-70
-service#org.altbeacon.beacon.BeaconIntentProcessor
-ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:36:9-39:40
-	android:enabled
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:38:13-35
-	android:exported
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:39:13-37
-	android:name
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:37:13-70
 service#org.altbeacon.beacon.service.ScanJob
 ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:40:9-50:19
 	android:exported
