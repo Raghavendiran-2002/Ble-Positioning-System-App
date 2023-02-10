@@ -21,8 +21,12 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
   void initState() {
     super.initState();
     scanSpecificDevice();
-    timer = Timer.periodic(Duration(seconds: 1), (Timer t) {
-      isScanning ? scanSpecificDevice() : null;
+    timer = Timer.periodic(Duration(seconds: 2), (Timer t) {
+      print("Running ${isScanning}");
+      scanSpecificDevice();
+      print("${isScanning}");
+
+      // isScanning ? null : scanSpecificDevice();
     });
   }
 
@@ -36,7 +40,7 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
     flutterBlue.startScan(timeout: Duration(seconds: 1));
     flutterBlue.scanResults.listen((results) {
       for (ScanResult r in results) {
-        print("Running");
+        // print("Running");
         setState(() {
           isScanning = true;
         });
@@ -65,6 +69,13 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
     setState(() {
       isScanning = false;
     });
+  }
+
+  String CompareNode(node1, node2) {
+    if (node1 < node2) {
+      return "Node1";
+    }
+    return "Node2";
   }
 
   @override
@@ -143,6 +154,7 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
                   ),
                 ),
               ),
+              Text("${CompareNode(scanResult[0].rssi, scanResult[1].rssi)}")
             ],
           ),
         ),
