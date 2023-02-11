@@ -1,4 +1,5 @@
 import 'package:ble_positioning_system/home-flow/screens/homescreen.dart';
+import 'package:ble_positioning_system/login-flow/screens/loginscreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -21,12 +22,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(useMaterial3: true),
+      theme: ThemeData(useMaterial3: true, backgroundColor: Colors.black),
       title: 'Smart Museum',
-      initialRoute: "GeoFencing",
+      initialRoute: "flutterBluePlus",
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => HomeScreen(),
+        "login": (context) => LoginPage(),
         "flutterBeacon": (context) => Beacons_Plugin(),
         "flutterBluePlus": (context) => Flutter_Blue_Plus(),
         "GeoFencing": (context) => GeoFencing(),

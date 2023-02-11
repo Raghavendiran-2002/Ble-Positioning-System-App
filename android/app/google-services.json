@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "390019752284-8i2pburio482ascapl2b96k4jsg4vddf.apps.googleusercontent.com",
+          "client_id": "390019752284-o98ool7hqd9uo176emnl2n7ml47s3u5p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raghavBLE.ble_positioning_system",
+            "certificate_hash": "8e391b8f7bb330ca9e1076d57e665abf7d21be88"
+          }
+        },
+        {
+          "client_id": "390019752284-jfhbtvjslkf67fq61sp9rnjkpba1ktd9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -29,6 +37,13 @@
             {
               "client_id": "390019752284-8i2pburio482ascapl2b96k4jsg4vddf.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "390019752284-dumu5bci469dbjq4n83kpcjhjq6ih7o4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.raghavBLE.blePositioningSystem"
+              }
             }
           ]
         }

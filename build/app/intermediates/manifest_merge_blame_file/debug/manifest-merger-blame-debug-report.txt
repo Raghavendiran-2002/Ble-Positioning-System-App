@@ -82,7 +82,7 @@
 46-->[androidx.core:core:1.6.0] /Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 47        android:debuggable="true"
 48        android:icon="@mipmap/ic_launcher"
-49        android:label="ble_positioning_system" >
+49        android:label="Smart Museum" >
 50        <service
 51            android:name="com.pravera.flutter_foreground_task.service.ForegroundService"
 52            android:foregroundServiceType="location"
@@ -362,20 +362,45 @@
 212-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
 213
 214        <activity
-214-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-215            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-215-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-216            android:exported="false"
-216-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-217            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-217-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-218
-219        <meta-data
-219-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-220            android:name="com.google.android.gms.version"
-220-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-221            android:value="@integer/google_play_services_version" />
-221-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-222    </application>
-223
-224</manifest>
+214-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:23:9-27:75
+215            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+215-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:24:13-93
+216            android:excludeFromRecents="true"
+216-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:25:13-46
+217            android:exported="false"
+217-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:26:13-37
+218            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+218-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:27:13-72
+219        <!--
+220            Service handling Google Sign-In user revocation. For apps that do not integrate with
+221            Google Sign-In, this service will never be started.
+222        -->
+223        <service
+223-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:33:9-37:51
+224            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+224-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:34:13-89
+225            android:exported="true"
+225-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:35:13-36
+226            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+226-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:36:13-107
+227            android:visibleToInstantApps="true" />
+227-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:37:13-48
+228
+229        <activity
+229-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+230            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+230-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+231            android:exported="false"
+231-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+232            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+232-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+233
+234        <meta-data
+234-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+235            android:name="com.google.android.gms.version"
+235-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+236            android:value="@integer/google_play_services_version" />
+236-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+237    </application>
+238
+239</manifest>

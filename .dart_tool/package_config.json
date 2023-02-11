@@ -188,6 +188,36 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "google_sign_in",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/google_sign_in-5.4.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "google_sign_in_android",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/google_sign_in_android-6.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "google_sign_in_ios",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/google_sign_in_ios-5.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "google_sign_in_platform_interface",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/google_sign_in_platform_interface-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "google_sign_in_web",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/google_sign_in_web-0.10.2+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
@@ -244,6 +274,18 @@
     {
       "name": "protobuf",
       "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/protobuf-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "quiver",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/quiver-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "rounded_loading_button",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/rounded_loading_button-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -314,7 +356,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-02-11T15:24:12.834636Z",
+  "generated": "2023-02-11T16:32:17.784730Z",
   "generator": "pub",
   "generatorVersion": "2.19.1"
 }

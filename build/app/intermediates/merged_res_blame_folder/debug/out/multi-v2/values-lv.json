@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-23:/values-lv/values-lv.xml",
+            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-24:/values-lv/values-lv.xml",
             "map": [
                 {
                     "source": "/Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/res/values-lv/values.xml",

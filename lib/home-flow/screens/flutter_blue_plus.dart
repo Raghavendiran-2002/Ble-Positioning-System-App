@@ -22,10 +22,7 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
     super.initState();
     scanSpecificDevice();
     timer = Timer.periodic(Duration(seconds: 2), (Timer t) {
-      print("Running ${isScanning}");
       scanSpecificDevice();
-      print("${isScanning}");
-
       // isScanning ? null : scanSpecificDevice();
     });
   }
@@ -155,7 +152,7 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
                   ),
                 ),
               ),
-              Text("${CompareNode(scanResult[0].rssi, scanResult[1].rssi)}")
+              // Text("${CompareNode(scanResult[0].rssi, scanResult[1].rssi)}")
             ],
           ),
         ),

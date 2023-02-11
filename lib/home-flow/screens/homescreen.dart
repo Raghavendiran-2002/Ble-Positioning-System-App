@@ -1,6 +1,6 @@
-
-import 'package:ble_positioning_system/home-flow/services/flutter_ble_service.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -10,13 +10,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
-
   @override
   void initState() {
     super.initState();
   }
-
 
   @override
   void dispose() {
@@ -25,6 +22,26 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: Scaffold(body: Center(child: Text("Hi")),));
+    return SafeArea(
+        child: Scaffold(
+      body: Column(
+        children: [
+          Center(
+            child: IconButton(
+              onPressed: () async {
+                FirebaseAuth.instance.signOut();
+                GoogleSignIn().signOut();
+                Navigator.pushNamedAndRemoveUntil(
+                    context, "login", (Route<dynamic> route) => false);
+              },
+              icon: Icon(
+                Icons.logout,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    ));
   }
 }

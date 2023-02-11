@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-23:/values-pl/values-pl.xml",
+            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-24:/values-pl/values-pl.xml",
             "map": [
                 {
                     "source": "/Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/res/values-pl/values-pl.xml",
