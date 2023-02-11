@@ -27,6 +27,10 @@ MERGED from [com.google.android.material:material:1.3.0] /Users/raghavendiran/.g
 MERGED from [com.google.android.material:material:1.3.0] /Users/raghavendiran/.gradle/caches/transforms-3/5eb308ae6b6cc49c7927570f875e85a0/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/3341a35f905190d65ab558d4bcf21afa/transformed/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/3341a35f905190d65ab558d4bcf21afa/transformed/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/43637d05f05d1aec7efb5b58ce99c91d/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/43637d05f05d1aec7efb5b58ce99c91d/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/6a298c891cbd6182182a281d641b5ec1/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/6a298c891cbd6182182a281d641b5ec1/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
@@ -55,6 +59,7 @@ MERGED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/Mobile
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-25:12
+MERGED from [:geolocator_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-45:12
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:2:1-61:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/4f8a10da11d41b9ccabff01515190014/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
@@ -70,6 +75,8 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/raghavendir
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/c4f101127aac5839f4ec928050467c19/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/6d59c5aad4a64fd0908a64a99be63004/transformed/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/3341a35f905190d65ab558d4bcf21afa/transformed/jetified-play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/43637d05f05d1aec7efb5b58ce99c91d/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/b7dd2676f7144db504510e8969da0e8a/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/6a298c891cbd6182182a281d641b5ec1/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/a4e1470a603bddf57cd801c2e2b5b4d4/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
@@ -217,6 +224,8 @@ MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/Mobile
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:geolocator_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:geolocator_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:6:5-8:41
@@ -247,6 +256,10 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendi
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/6d59c5aad4a64fd0908a64a99be63004/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/6d59c5aad4a64fd0908a64a99be63004/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/3341a35f905190d65ab558d4bcf21afa/transformed/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/3341a35f905190d65ab558d4bcf21afa/transformed/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/43637d05f05d1aec7efb5b58ce99c91d/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/43637d05f05d1aec7efb5b58ce99c91d/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/b7dd2676f7144db504510e8969da0e8a/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/b7dd2676f7144db504510e8969da0e8a/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/6a298c891cbd6182182a281d641b5ec1/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44

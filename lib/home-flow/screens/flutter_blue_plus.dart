@@ -115,6 +115,7 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
                         child: IconButton(
                           color: Colors.blueAccent,
                           onPressed: () {
+                            flutterBlue.stopScan();
                             scanSpecificDevice();
                           },
                           icon: Icon(Icons.refresh),

@@ -51,7 +51,7 @@ dev_dependencies:
   cloud_firestore: ^4.3.1
   flutter_blue_plus: ^1.0.0
   beacons_plugin: ^2.0.8
-
+  easy_geofencing: ^0.2.0
 
 
 
