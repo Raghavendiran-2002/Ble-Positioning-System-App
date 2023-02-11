@@ -4,10 +4,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'bluetooth-flow/screens/beacon_plugin.dart';
+import 'bluetooth-flow/screens/flutter_blue_plus.dart';
+import 'bluetooth-flow/screens/flutter_bluetooth_serial.dart';
 import 'firebase_options.dart';
-import 'home-flow/screens/beacon_plugin.dart';
-import 'home-flow/screens/flutter_blue_plus.dart';
-import 'home-flow/screens/geofencing.dart';
+import 'geofencing-flow/screens/geofencing.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,9 +23,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(useMaterial3: true, backgroundColor: Colors.black),
+      theme: ThemeData(useMaterial3: true, fontFamily: "RobotoMono"),
       title: 'Smart Museum',
-      initialRoute: "flutterBluePlus",
+      initialRoute: "/",
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => HomeScreen(),
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         "flutterBeacon": (context) => Beacons_Plugin(),
         "flutterBluePlus": (context) => Flutter_Blue_Plus(),
         "GeoFencing": (context) => GeoFencing(),
+        "flutter_bluetooth_serial": (context) => Flutter_Bluetooth_Serial(),
       },
     );
   }

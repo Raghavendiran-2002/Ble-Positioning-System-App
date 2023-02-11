@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-24:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-28:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/res/values-watch-v20/values.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/6d59c5aad4a64fd0908a64a99be63004/transformed/appcompat-1.2.0/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/6f1ac482aaf191ad8f63c310f97dc5d3/transformed/appcompat-1.3.0/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

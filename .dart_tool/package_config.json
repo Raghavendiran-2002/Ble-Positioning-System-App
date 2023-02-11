@@ -140,6 +140,12 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "flutter_bluetooth_serial",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_bluetooth_serial-0.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1",
       "packageUri": "lib/",
@@ -356,7 +362,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-02-11T16:32:17.784730Z",
+  "generated": "2023-02-11T18:00:20.834460Z",
   "generator": "pub",
   "generatorVersion": "2.19.1"
 }

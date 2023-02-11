@@ -23,25 +23,61 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-        child: Scaffold(
-      body: Column(
-        children: [
-          Center(
-            child: IconButton(
-              onPressed: () async {
-                FirebaseAuth.instance.signOut();
-                GoogleSignIn().signOut();
-                Navigator.pushNamedAndRemoveUntil(
-                    context, "login", (Route<dynamic> route) => false);
-              },
-              icon: Icon(
-                Icons.logout,
-                color: Colors.black,
-              ),
+      child: Scaffold(
+        body: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "flutterBluePlus");
+                  },
+                  icon: Icon(
+                    Icons.bluetooth_audio_sharp,
+                    color: Colors.black,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "flutter_bluetooth_serial");
+                  },
+                  icon: Icon(
+                    Icons.settings_bluetooth_sharp,
+                    color: Colors.black,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "GeoFencing");
+                  },
+                  icon: Icon(
+                    Icons.navigation_outlined,
+                    color: Colors.black,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () async {
+                    FirebaseAuth.instance.signOut();
+                    GoogleSignIn().signOut();
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, "login", (Route<dynamic> route) => false);
+                  },
+                  icon: Icon(
+                    Icons.logout,
+                    color: Colors.black,
+                  ),
+                ),
+              ],
             ),
-          ),
-        ],
+            Text(
+              "Welcome To Smart\n Museum",
+              style: TextStyle(fontFamily: "RobotoMono", fontSize: 25),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
       ),
-    ));
+    );
   }
 }
