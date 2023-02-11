@@ -1,7 +1,27 @@
 [
     {
-        "merged": "com.raghavBLE.ble_positioning_system.app-merged_res-26:/drawable-v21_launch_background.xml.flat",
-        "source": "com.raghavBLE.ble_positioning_system.app-main-19:/drawable-v21/launch_background.xml"
+        "merged": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-merged_res-26:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-main-19:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-merged_res-26:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-main-19:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-merged_res-26:/drawable-v21_launch_background.xml.flat",
+        "source": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-main-19:/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-merged_res-26:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-main-19:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-merged_res-26:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-main-19:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-merged_res-26:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/raghavendiran/.gradle/daemon/7.5/com.raghavBLE.ble_positioning_system.app-main-19:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "com.raghavBLE.ble_positioning_system.app-merged_res-26:/mipmap-mdpi_ic_launcher.png.flat",
