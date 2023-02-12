@@ -9,6 +9,7 @@ import 'bluetooth-flow/screens/flutter_blue_plus.dart';
 import 'bluetooth-flow/screens/flutter_bluetooth_serial.dart';
 import 'firebase_options.dart';
 import 'geofencing-flow/screens/geofencing.dart';
+import 'home-flow/screens/navScreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,10 +26,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: true, fontFamily: "RobotoMono"),
       title: 'Smart Museum',
-      initialRoute: "/",
+      initialRoute: "Nav",
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => HomeScreen(),
+        "Nav": (context) => NavScreen(),
         "login": (context) => LoginPage(),
         "flutterBeacon": (context) => Beacons_Plugin(),
         "flutterBluePlus": (context) => Flutter_Blue_Plus(),

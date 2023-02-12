@@ -66,10 +66,12 @@ class _Flutter_Bluetooth_SerialState extends State<Flutter_Bluetooth_Serial> {
 
   @override
   void dispose() {
-    // Avoid memory leak (`setState` after dispose) and cancel discovery
-    _streamSubscription?.cancel();
-
-    super.dispose();
+    if (mounted) {
+      FlutterBluetoothSerial.instance.cancelDiscovery();
+      _streamSubscription?.cancel();
+      timer?.cancel();
+      super.dispose();
+    }
   }
 
   @override

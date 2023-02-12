@@ -29,8 +29,11 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
 
   @override
   void dispose() {
-    timer?.cancel();
-    super.dispose();
+    if (mounted) {
+      timer?.cancel();
+      flutterBlue.stopScan();
+      super.dispose();
+    }
   }
 
   void scanSpecificDevice() {
