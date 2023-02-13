@@ -57,6 +57,8 @@ dev_dependencies:
   google_sign_in: ^5.4.2
   flutter_bluetooth_serial: ^0.4.0
   mqtt_client: ^9.7.4
+  flutter_switch: ^0.3.2
+
 
 
 
