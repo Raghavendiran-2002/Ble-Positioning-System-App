@@ -68,6 +68,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "crypto",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/crypto-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.5",
       "packageUri": "lib/",
@@ -76,6 +82,12 @@
     {
       "name": "easy_geofencing",
       "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/easy_geofencing-0.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "event_bus",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/event_bus-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -266,6 +278,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "mqtt_client",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/mqtt_client-9.7.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/path-1.8.2",
       "packageUri": "lib/",
@@ -362,7 +380,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-02-11T18:00:20.834460Z",
+  "generated": "2023-02-13T15:13:12.470771Z",
   "generator": "pub",
   "generatorVersion": "2.19.1"
 }

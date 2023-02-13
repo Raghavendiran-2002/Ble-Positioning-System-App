@@ -10,6 +10,7 @@ import 'bluetooth-flow/screens/flutter_bluetooth_serial.dart';
 import 'firebase_options.dart';
 import 'geofencing-flow/screens/geofencing.dart';
 import 'home-flow/screens/navScreen.dart';
+import 'nwarehouse-flow/screens/nwarehousescreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: true, fontFamily: "RobotoMono"),
       title: 'Smart Museum',
-      initialRoute: "Nav",
+      initialRoute: "nwarehouse",
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => HomeScreen(),
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         "flutterBluePlus": (context) => Flutter_Blue_Plus(),
         "GeoFencing": (context) => GeoFencing(),
         "flutter_bluetooth_serial": (context) => Flutter_Bluetooth_Serial(),
+        "nwarehouse": (context) => NwareHouseScreen(),
       },
     );
   }

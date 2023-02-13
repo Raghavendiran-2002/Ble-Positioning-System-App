@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:13:5-49:19
+INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:15:5-51:19
 MERGED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
@@ -54,11 +54,11 @@ MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/raghavendiran/.gradle/c
 	android:name
 		INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-50:12
-INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-50:12
-INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-50:12
-INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-50:12
-MERGED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-50:12
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-52:12
+MERGED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-52:12
 MERGED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
@@ -136,11 +136,11 @@ INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app
 		INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-50:12
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-52:12
 		INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-50:12
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:1-52:12
 		INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -160,8 +160,30 @@ MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gr
 		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:12:9-33
 	android:name
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:3:22-65
+uses-permission#android.permission.INTERNET
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:google_sign_in_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [:google_sign_in_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
+MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:5-74
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:5-74
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-22:38
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-22:38
 MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-74
@@ -175,9 +197,9 @@ MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gr
 	android:required
 		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:15:9-33
 	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:22-71
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:5-80
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:7:5-80
 MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
 MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-81
@@ -185,9 +207,9 @@ MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/Mobil
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:17:5-81
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:22-78
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:5-78
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:8:5-78
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:23:5-79
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:23:5-79
 MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
@@ -195,41 +217,31 @@ MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniPro
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:7:5-85
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:9:5-85
 	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:7:22-82
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:9:22-82
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:8:5-77
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:10:5-77
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
 	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:8:22-74
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:10:22-74
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:9:5-68
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:11:5-68
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-68
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-68
 	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:9:22-65
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:11:22-65
 uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:10:5-94
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:12:5-94
 	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:10:22-91
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:12:22-91
 uses-permission#android.permission.ACTIVITY_RECOGNITION
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:11:5-79
+ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:13:5-79
 	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:11:22-76
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:12:5-79
-MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
-MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:9:5-79
-MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:9:5-79
-	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:12:22-76
+		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:13:22-76
 uses-sdk
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml
@@ -378,16 +390,6 @@ INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app
 	android:minSdkVersion
 		INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml:7:5-66
-MERGED from [:google_sign_in_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
-MERGED from [:google_sign_in_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/google_sign_in_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
-MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:13:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:13:5-67
-	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml:7:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
