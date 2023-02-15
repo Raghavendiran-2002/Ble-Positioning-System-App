@@ -39,7 +39,7 @@ class _NwareHouseScreenState extends State<NwareHouseScreen> {
                 showOnOff: true,
                 onToggle: (val) {
                   setState(() {
-                    mqtt.instance.nodePublish(val);
+                    mqtt.instance.nodePublish(!val);
                     status = val;
                   });
                 },

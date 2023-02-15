@@ -10,14 +10,62 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  bool isPopup = true;
   @override
   void initState() {
+    setState(() {
+      isPopup = true;
+    });
     super.initState();
   }
 
   @override
   void dispose() {
     super.dispose();
+  }
+
+  void displaySnackBar(String message,
+      {Color color = Colors.white, int durationInSeconds = 2}) {
+    SnackBar snackBar = SnackBar(
+      content: Column(
+        children: [
+          Text(
+            message,
+            style: TextStyle(color: Colors.black),
+          ),
+          // Text(
+          //   "jdhg",
+          //   style: TextStyle(color: Colors.black),
+          // ),
+          Image.asset(
+            'assets/images/img2.png',
+            width: 200,
+            height: 200,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                child: Text("Open"),
+              ),
+              ElevatedButton(onPressed: () {}, child: Text("Close")),
+            ],
+          )
+        ],
+      ),
+      backgroundColor: color,
+      behavior: SnackBarBehavior.floating,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      duration: Duration(seconds: durationInSeconds),
+      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+    );
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    setState(() {
+      isPopup = true;
+    });
   }
 
   @override
@@ -45,8 +93,19 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Text(
               "Welcome To Smart\n Museum",
-              style: TextStyle(fontFamily: "RobotoMono", fontSize: 25),
+              style: Theme.of(context).textTheme.displayMedium,
+              // style: TextStyle(fontFamily: "RobotoMono", fontSize: 25),
               textAlign: TextAlign.center,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                print("pressed");
+                if (isPopup) {
+                  print("activated");
+                  displaySnackBar("gdfshg");
+                }
+              },
+              child: Text("JKDFHG"),
             ),
           ],
         ),

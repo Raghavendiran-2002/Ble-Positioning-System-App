@@ -25,9 +25,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(useMaterial3: true, fontFamily: "RobotoMono"),
+      theme: ThemeData(
+        useMaterial3: true,
+        fontFamily: "RobotoMono",
+        scaffoldBackgroundColor: Color(0xFF303234),
+        textTheme: TextTheme(
+          displayMedium: TextStyle(color: Colors.white),
+        ),
+      ),
       title: 'Smart Museum',
-      initialRoute: "nwarehouse",
+      initialRoute: "Nav",
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => HomeScreen(),

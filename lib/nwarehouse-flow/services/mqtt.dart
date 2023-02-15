@@ -64,10 +64,9 @@ class mqtt {
   void nodePublish(bool val) {
     if (client.connectionStatus!.state == MqttConnectionState.connected) {
       print('MQTT client connected to AWS IoT');
-      const topic = 'esp32/sub';
+      const topic = publishTopic;
       final builder = MqttClientPayloadBuilder();
-      builder.addString('{"nodeID":"1234","state":${val}}');
-      // Important: AWS IoT Core can only handle QOS of 0 or 1. QOS 2 (exactlyOnce) will fail!
+      builder.addString('{"nodeID":"1234","status":${val}}');
       client.publishMessage(topic, MqttQos.atLeastOnce, builder.payload!);
     }
   }

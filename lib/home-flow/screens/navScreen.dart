@@ -13,7 +13,6 @@ class NavScreen extends StatefulWidget {
 }
 
 class _NavScreenState extends State<NavScreen> {
-  PageController _pageController = PageController(initialPage: 0);
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
@@ -56,53 +55,82 @@ class _NavScreenState extends State<NavScreen> {
     });
   }
 
+  late PageController _pageController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController(initialPage: 0);
+    _pageController.addListener(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.museum,
-              color: Colors.black,
+      bottomNavigationBar: Theme(
+        data: ThemeData(
+          navigationBarTheme: NavigationBarThemeData(
+            indicatorColor: Colors.grey,
+            indicatorShape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
             ),
-            label: 'Home',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.bluetooth_audio_sharp,
-              color: Colors.black,
+        ),
+        child: NavigationBar(
+          backgroundColor: Colors.white,
+          destinations: [
+            NavigationDestination(
+              icon: Icon(
+                Icons.museum,
+                color: Colors.black,
+              ),
+              label: 'Home',
             ),
-            label: 'GeoFencing',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.settings_bluetooth_sharp,
-              color: Colors.black,
+            NavigationDestination(
+              icon: Icon(
+                Icons.bluetooth_audio_sharp,
+                color: Colors.black,
+              ),
+              label: 'GeoFencing',
             ),
-            label: 'Discovery',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.navigation_outlined,
-              color: Colors.black,
+            NavigationDestination(
+              icon: Icon(
+                Icons.settings_bluetooth_sharp,
+                color: Colors.black,
+              ),
+              label: 'Discovery',
             ),
-            label: 'Discovery',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
-        onTap: (index) {
-          _pageController.animateToPage(index,
-              duration: Duration(microseconds: 500), curve: Curves.ease);
-        },
+            NavigationDestination(
+              icon: Icon(
+                Icons.navigation_outlined,
+                color: Colors.black,
+              ),
+              label: 'Discovery',
+            ),
+          ],
+          selectedIndex: _selectedIndex,
+          // selectedItemColor: Colors.amber[800],
+          onDestinationSelected: (index) {
+            _pageController.animateToPage(index,
+                duration: Duration(microseconds: 500), curve: Curves.ease);
+            setState(() {
+              _selectedIndex = index;
+            });
+          },
+        ),
       ),
       body: PageView(
+        onPageChanged: (int index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+        controller: _pageController,
         children: [
           HomeScreen(),
           GeoFencing(),
-          Flutter_Bluetooth_Serial(),
           Flutter_Blue_Plus(),
+          Flutter_Bluetooth_Serial(),
         ],
       ),
     );
