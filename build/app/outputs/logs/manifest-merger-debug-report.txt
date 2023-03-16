@@ -144,22 +144,6 @@ INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app
 		INJECTED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:1:11-69
-uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:3:5-68
-MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
-MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
-MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:10:5-12:36
-MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:10:5-12:36
-	android:maxSdkVersion
-		ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-35
-	android:required
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:12:9-33
-	android:name
-		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:3:22-65
 uses-permission#android.permission.INTERNET
 ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:5-67
 MERGED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:5-67
@@ -436,6 +420,20 @@ uses-permission#android.permission.BLUETOOTH_CONNECT
 ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-76
 	android:name
 		ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-73
+uses-permission#android.permission.BLUETOOTH
+ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
+MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:10:5-12:36
+MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:10:5-12:36
+	android:maxSdkVersion
+		ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-35
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:12:9-33
+	android:name
+		ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-52
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-81
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:16:5-81

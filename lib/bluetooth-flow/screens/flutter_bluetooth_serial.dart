@@ -87,7 +87,8 @@ class _Flutter_Bluetooth_SerialState extends State<Flutter_Bluetooth_Serial> {
                   child: Container(
                     margin: new EdgeInsets.all(16.0),
                     child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      color: Colors.black,
+                      valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
                     ),
                   ),
                 )

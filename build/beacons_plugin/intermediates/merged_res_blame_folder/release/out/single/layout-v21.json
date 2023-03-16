@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.umair.beacons_plugin-merged_res-19:/layout-v21/notification_template_custom_big.xml",
+        "source": "com.umair.beacons_plugin-core-1.6.0-9:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "com.umair.beacons_plugin-merged_res-19:/layout-v21/notification_action.xml",
+        "source": "com.umair.beacons_plugin-core-1.6.0-9:/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "com.umair.beacons_plugin-merged_res-19:/layout-v21/notification_action_tombstone.xml",
+        "source": "com.umair.beacons_plugin-core-1.6.0-9:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "com.umair.beacons_plugin-merged_res-19:/layout-v21/notification_template_icon_group.xml",
+        "source": "com.umair.beacons_plugin-core-1.6.0-9:/layout-v21/notification_template_icon_group.xml"
+    }
+]

@@ -14,8 +14,10 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
   FlutterBluePlus flutterBlue = FlutterBluePlus.instance;
   Timer? timer;
   List<String> DeviceID = [
-    "94:B9:7E:D5:CD:F6",
-    "24:0A:C4:0B:2A:D2",
+    // "94:B9:7E:D5:CD:F6",
+    "60:77:71:8E:74:1B", // Beacon 1
+    // "24:0A:C4:0B:2A:D2",
+    "60:77:71:8E:63:12", // Beacon 2
     "72:7F:50:B3:92:E4"
   ];
   List<ScanResult> scanResult = [];
@@ -29,7 +31,7 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
     timer = Timer.periodic(Duration(seconds: 2), (Timer t) {
       scanSpecificDevice();
       // if (scanResult.length == 2 && isActive && isScanning) {
-      if (scanResult.length == 3 && isActive) {
+      if (scanResult.length == 2 && isActive) {
         print("Comparing");
         if (scanResult[0].rssi < scanResult[1].rssi) {
           displaySnackBar(scanResult[1].device.name, "img1");
@@ -40,7 +42,7 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
       }
       // isScanning ? null : scanSpecificDevice();
     });
-    timer = Timer.periodic(Duration(seconds: 15), (Timer t) {
+    timer = Timer.periodic(Duration(seconds: 10), (Timer t) {
       setState(() {
         isActive = true;
       });
@@ -63,10 +65,6 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
         children: [
           Text(
             message,
-            style: TextStyle(color: Colors.black),
-          ),
-          Text(
-            "jdhg",
             style: TextStyle(color: Colors.black),
           ),
           Image.asset(
@@ -98,7 +96,7 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
   }
 
   void scanSpecificDevice() {
-    flutterBlue.startScan(timeout: Duration(seconds: 1));
+    flutterBlue.startScan(timeout: Duration(seconds: 100000));
     flutterBlue.scanResults.listen((results) {
       for (ScanResult r in results) {
         // print("Running");
@@ -124,14 +122,14 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
               scanResult[scanResult.indexOf(r)] = r;
             });
           }
-        } else if (r.device.id.toString() == DeviceID[2]) {
-          if (!scanResult.contains(r)) {
-            scanResult.add(r);
-          } else {
-            setState(() {
-              scanResult[scanResult.indexOf(r)] = r;
-            });
-          }
+          // } else if (r.device.id.toString() == DeviceID[2]) {
+          //   if (!scanResult.contains(r)) {
+          //     scanResult.add(r);
+          //   } else {
+          //     setState(() {
+          //       scanResult[scanResult.indexOf(r)] = r;
+          //     });
+          //   }
         }
       }
     });
@@ -162,17 +160,25 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
                     child: Container(
                       margin: new EdgeInsets.all(16.0),
                       child: CircularProgressIndicator(
-                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                        color: Colors.black,
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
                       ),
                     ),
                   )
                 : IconButton(
                     icon: Icon(Icons.replay),
                     onPressed: () {
-                      flutterBlue.stopScan();
+                      // flutterBlue.stopScan();
                       scanSpecificDevice();
                     },
-                  )
+                  ),
+            IconButton(
+              icon: Icon(Icons.cancel),
+              onPressed: () {
+                // flutterBlue.stopScan();
+                scanSpecificDevice();
+              },
+            )
           ],
         ),
         body: Container(
@@ -213,7 +219,6 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
                         padding: EdgeInsets.only(top: 10, bottom: 10),
                         child: ListTile(
                           shape: RoundedRectangleBorder(
-                            //<-- SEE HERE
                             side: BorderSide(width: 2),
                             borderRadius: BorderRadius.circular(20),
                           ),

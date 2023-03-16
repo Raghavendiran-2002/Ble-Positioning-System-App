@@ -1,0 +1,14 @@
+com.baseflow.geolocator.geolocator_android-jetified-play-services-basement-17.0.0-0 /Users/raghavendiran/.gradle/caches/transforms-3/11c198ef428b71d5f3496d781b409414/transformed/jetified-play-services-basement-17.0.0/res
+com.baseflow.geolocator.geolocator_android-jetified-play-services-base-17.0.0-1 /Users/raghavendiran/.gradle/caches/transforms-3/3509752ce694a3e4fc7e1f41f381a23a/transformed/jetified-play-services-base-17.0.0/res
+com.baseflow.geolocator.geolocator_android-jetified-annotation-experimental-1.1.0-2 /Users/raghavendiran/.gradle/caches/transforms-3/3795200b4ef80330da39fee63b1e3f99/transformed/jetified-annotation-experimental-1.1.0/res
+com.baseflow.geolocator.geolocator_android-jetified-window-java-1.0.0-beta04-3 /Users/raghavendiran/.gradle/caches/transforms-3/4f8a10da11d41b9ccabff01515190014/transformed/jetified-window-java-1.0.0-beta04/res
+com.baseflow.geolocator.geolocator_android-core-1.6.0-4 /Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/res
+com.baseflow.geolocator.geolocator_android-jetified-window-1.0.0-beta04-5 /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/res
+com.baseflow.geolocator.geolocator_android-main-6 /Users/raghavendiran/.pub-cache/hosted/pub.dev/geolocator_android-2.1.0/android/src/main/res
+com.baseflow.geolocator.geolocator_android-release-7 /Users/raghavendiran/.pub-cache/hosted/pub.dev/geolocator_android-2.1.0/android/src/release/res
+com.baseflow.geolocator.geolocator_android-pngs-8 /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/generated/res/pngs/release
+com.baseflow.geolocator.geolocator_android-resValues-9 /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/generated/res/resValues/release
+com.baseflow.geolocator.geolocator_android-rs-10 /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/generated/res/rs/release
+com.baseflow.geolocator.geolocator_android-mergeReleaseResources-11 /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.baseflow.geolocator.geolocator_android-mergeReleaseResources-12 /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.baseflow.geolocator.geolocator_android-merged_res-13 /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/intermediates/merged_res/release

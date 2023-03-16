@@ -34,7 +34,7 @@ class mqtt {
 
     // Setup the connection Message
     final connMess =
-        MqttConnectMessage().withClientIdentifier('esp').startClean();
+        MqttConnectMessage().withClientIdentifier(' PPM_TEST').startClean();
     client.connectionMessage = connMess;
   }
 
@@ -67,6 +67,16 @@ class mqtt {
       const topic = publishTopic;
       final builder = MqttClientPayloadBuilder();
       builder.addString('{"nodeID":"1234","status":${val}}');
+      client.publishMessage(topic, MqttQos.atLeastOnce, builder.payload!);
+    }
+  }
+
+  void nodePublishLED(String topic1, bool val, String color) {
+    if (client.connectionStatus!.state == MqttConnectionState.connected) {
+      print('MQTT client connected to AWS IoT');
+      String topic = topic1;
+      final builder = MqttClientPayloadBuilder();
+      builder.addString('{"color":"${color}","state":${val}}');
       client.publishMessage(topic, MqttQos.atLeastOnce, builder.payload!);
     }
   }

@@ -1,0 +1,12 @@
+com.boskokg.flutter_blue_plus-jetified-annotation-experimental-1.1.0-0 /Users/raghavendiran/.gradle/caches/transforms-3/3795200b4ef80330da39fee63b1e3f99/transformed/jetified-annotation-experimental-1.1.0/res
+com.boskokg.flutter_blue_plus-jetified-window-java-1.0.0-beta04-1 /Users/raghavendiran/.gradle/caches/transforms-3/4f8a10da11d41b9ccabff01515190014/transformed/jetified-window-java-1.0.0-beta04/res
+com.boskokg.flutter_blue_plus-core-1.6.0-2 /Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/res
+com.boskokg.flutter_blue_plus-jetified-window-1.0.0-beta04-3 /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/res
+com.boskokg.flutter_blue_plus-main-4 /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/main/res
+com.boskokg.flutter_blue_plus-release-5 /Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.4.0/android/src/release/res
+com.boskokg.flutter_blue_plus-pngs-6 /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/generated/res/pngs/release
+com.boskokg.flutter_blue_plus-resValues-7 /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/generated/res/resValues/release
+com.boskokg.flutter_blue_plus-rs-8 /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/generated/res/rs/release
+com.boskokg.flutter_blue_plus-mergeReleaseResources-9 /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.boskokg.flutter_blue_plus-mergeReleaseResources-10 /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.boskokg.flutter_blue_plus-merged_res-11 /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_res/release

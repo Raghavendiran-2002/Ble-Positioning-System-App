@@ -15,59 +15,59 @@
 15    <uses-permission android:name="android.permission.INTERNET" />
 15-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:5-67
 15-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:4:22-64
-16    <uses-permission
-16-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:3:5-68
-17        android:name="android.permission.BLUETOOTH"
-17-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:3:22-65
-18        android:maxSdkVersion="30"
-18-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-35
-19        android:required="false" />
-19-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:12:9-33
-20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:5-79
-20-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:22-76
-21    <uses-permission
-21-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:5-74
-22        android:name="android.permission.BLUETOOTH_ADMIN"
-22-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:22-71
-23        android:maxSdkVersion="30"
-23-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-35
-24        android:required="false" />
-24-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:15:9-33
-25    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-25-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:7:5-80
-25-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:7:22-78
-26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-26-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:8:5-78
-26-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:8:22-76
-27    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-27-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:9:5-85
-27-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:9:22-82
-28    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-28-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:10:5-77
-28-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:10:22-74
-29    <uses-permission android:name="android.permission.WAKE_LOCK" />
-29-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:11:5-68
-29-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:11:22-65
-30    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
-30-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:12:5-94
-30-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:12:22-91
-31    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-31-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:13:5-79
-31-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:13:22-76
-32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-32-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:5-79
-32-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:22-76
-33    <!--
-34         New Bluetooth permissions in Android 12
-35           https://developer.android.com/about/versions/12/features/bluetooth-permissions
-36    -->
-37    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-37-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-73
-37-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-70
-38    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-38-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-76
-38-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-73
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:5-79
+16-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:22-76
+17    <uses-permission
+17-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:5-74
+18        android:name="android.permission.BLUETOOTH_ADMIN"
+18-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:22-71
+19        android:maxSdkVersion="30"
+19-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-35
+20        android:required="false" />
+20-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:15:9-33
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:7:5-80
+21-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:7:22-78
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:8:5-78
+22-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:8:22-76
+23    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+23-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:9:5-85
+23-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:9:22-82
+24    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+24-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:10:5-77
+24-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:10:22-74
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:11:5-68
+25-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:11:22-65
+26    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+26-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:12:5-94
+26-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:12:22-91
+27    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+27-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:13:5-79
+27-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:13:22-76
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:5-79
+28-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:22-76
+29    <!--
+30         New Bluetooth permissions in Android 12
+31           https://developer.android.com/about/versions/12/features/bluetooth-permissions
+32    -->
+33    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+33-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-73
+33-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-70
+34    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- Request legacy Bluetooth permissions on older devices. -->
+34-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-76
+34-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-73
+35    <uses-permission
+35-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
+36        android:name="android.permission.BLUETOOTH"
+36-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-52
+37        android:maxSdkVersion="30"
+37-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-35
+38        android:required="false" />
+38-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:12:9-33
 39    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 39-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-81
 39-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-78

@@ -9,7 +9,8 @@ class GeoFencing extends StatefulWidget {
 }
 
 class _GeoFencingState extends State<GeoFencing> {
-  double currentLocation = 0;
+  double distanceBtwBeacon = 0;
+  List<double> currentLocation = [0.24, 0435.3];
   Position? position;
   bool isReady = false;
   @override
@@ -18,7 +19,7 @@ class _GeoFencingState extends State<GeoFencing> {
     super.initState();
     getCurrentPosition();
     setState(() {
-      currentLocation = Geolocator.distanceBetween(
+      distanceBtwBeacon = Geolocator.distanceBetween(
           10.7797701, 79.1738468, 10.7797702, 79.1738485);
       // print(Geolocator.distanceBetween(
       //     10.7797702, 79.1738463, 10.7797701, 79.1738468));
@@ -35,6 +36,11 @@ class _GeoFencingState extends State<GeoFencing> {
     position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.high);
     print("LOCATION => ${position!.toJson()}");
+    setState(() {
+      currentLocation[0] = position!.toJson()["longitude"];
+      currentLocation[1] = position!.toJson()["latitude"];
+    });
+
     isReady = (position != null) ? true : false;
   }
 
@@ -46,7 +52,6 @@ class _GeoFencingState extends State<GeoFencing> {
           child: Center(
             child: Column(
               children: [
-                Text("${currentLocation}"),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
@@ -58,7 +63,20 @@ class _GeoFencingState extends State<GeoFencing> {
                       textStyle:
                           TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
                   onPressed: () {},
-                  child: Text("Hi"),
+                  child: Text(
+                    "latitude : ${currentLocation[1]}\nlongitude : ${currentLocation[0]}",
+                    style: TextStyle(fontSize: 14),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.grey),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                  child: Text("${distanceBtwBeacon}"),
                 ),
               ],
             ),
