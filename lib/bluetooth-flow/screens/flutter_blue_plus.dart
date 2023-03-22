@@ -52,11 +52,14 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
 
   @override
   void dispose() {
-    if (mounted) {
-      timer?.cancel();
-      flutterBlue.stopScan();
-      super.dispose();
-    }
+    // if (mounted) {
+    //   timer?.cancel();
+    //   flutterBlue.stopScan();
+    //   super.dispose();
+    // }
+    timer?.cancel();
+    flutterBlue.stopScan();
+    super.dispose();
   }
 
   void displayBeacon() {

@@ -1,6 +1,10 @@
+import 'dart:async';
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_blue_plus/flutter_blue_plus.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,15 +15,115 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  FlutterBluePlus flutterBlue = FlutterBluePlus.instance;
+  FlutterTts ftts = FlutterTts();
   String beaconAvailable = "NO BEACONS FOUND";
+  final stack = Stack<ScanResult>();
+  List<String> beaconUUID = ["60:77:71:8E:74:1B", "60:77:71:8E:63:12"];
+  List<bool> isVisited = [false, false, false];
+  bool isScanning = false;
+  Timer? timer;
+
   @override
   void initState() {
     super.initState();
+    scanBeacon();
+    timer = Timer.periodic(Duration(seconds: 3), (Timer t) {
+      closestBeacon();
+    });
+    stack.isNotEmpty ? print(stack.peek.device.name) : null;
   }
 
   @override
   void dispose() {
+    timer?.cancel();
+    flutterBlue.stopScan();
     super.dispose();
+  }
+
+  void scanBeacon() {
+    flutterBlue.startScan(
+        scanMode: ScanMode.lowPower,
+        macAddresses: beaconUUID,
+        timeout: Duration(seconds: 2));
+    flutterBlue.scanResults.listen((results) {
+      for (ScanResult r in results) {
+        setState(() {
+          isScanning = true;
+        });
+        // print("${r.device.name} ${r.rssi} ${r.device.id}");
+        if (r.device.id.toString() == beaconUUID[0] ||
+            r.device.id.toString() == beaconUUID[1]) {
+          // print("${r.device.name} ${r.rssi} ${r.device.id}");
+          if (stack.isEmpty) stack.push(r);
+          if (stack.peek == r) {
+            stack.pop();
+            stack.push(r);
+          }
+          // print("***************");
+          print("${stack.peek.device.id}  ${stack.peek.device.name}");
+        }
+      }
+    });
+    flutterBlue.stopScan();
+    setState(() {
+      isScanning = false;
+    });
+  }
+
+  void closestBeacon() {
+    scanBeacon();
+    if (stack.size == 1) {
+      setState(() {
+        stack.peek.device.id.toString() == beaconUUID[0]
+            ? beaconAvailable = "SASTRA"
+            : beaconAvailable = "Embedded System";
+      });
+      String imgurl = stack.peek.device.id.toString() == beaconUUID[0]
+          ? "sastra1"
+          : "sastra2";
+      String speaktext = stack.peek.device.id.toString() == beaconUUID[0]
+          ? "Welcome to SASTRA"
+          : "Welcome to Embedded System Lab";
+      print("${imgurl} ${speaktext}  ${stack.peek.device.id}");
+      if (-80 < stack.peek.rssi) {
+        if (!isVisited[2]) {
+          print(
+              "Beacon Near : ${stack.peek.device.id} ${stack.peek.device.name}");
+          displaySnackBar(stack.peek.device.name, imgurl);
+          speakText(speaktext);
+          isVisited[0] = true;
+        }
+        setState(() {
+          beaconAvailable = "SCANNING FOR BEACONS";
+        });
+      }
+      stack.pop();
+    }
+    if (stack.size == 2) {
+      if (-40 < stack.peek.rssi && -40 > stack.peekmin.rssi) {
+        if (!isVisited[1]) {
+          displaySnackBar(stack.peek.device.name, "img1");
+          speakText("Welcome to Sastra");
+          isVisited[1] = true;
+        }
+      } else if (-40 < stack.peek.rssi && -40 > stack.peekmin.rssi) {
+        if (!isVisited[0]) {
+          displaySnackBar(stack.peekmin.device.name, "shiva");
+          speakText("Welcome to Embedded System Lab");
+          isVisited[0] = true;
+        }
+      }
+    }
+  }
+
+  void speakText(String voice) async {
+    var result = await ftts.speak("${voice}");
+    if (result == 1) {
+      //speaking
+    } else {
+      //not speaking
+    }
   }
 
   void displaySnackBar(String message, String imgurl,
@@ -68,6 +172,10 @@ class _HomeScreenState extends State<HomeScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
+                Icon(
+                  Icons.bluetooth_searching_rounded,
+                  color: isScanning ? Colors.green : Colors.red,
+                ),
                 IconButton(
                   onPressed: () async {
                     FirebaseAuth.instance.signOut();
@@ -128,4 +236,22 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+}
+
+class Stack<E> {
+  final _list = <E>[];
+
+  void push(E value) => _list.add(value);
+
+  E pop() => _list.removeLast();
+
+  E get peek => _list.last;
+  E get peekmin => _list.elementAt(0);
+  int get size => _list.length;
+  //void get sort => _list.sort;
+  bool get isEmpty => _list.isEmpty;
+  bool get isNotEmpty => _list.isNotEmpty;
+
+  @override
+  String toString() => _list.toString();
 }
