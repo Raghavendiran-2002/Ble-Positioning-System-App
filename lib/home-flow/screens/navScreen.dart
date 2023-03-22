@@ -1,9 +1,9 @@
 import 'package:ble_positioning_system/bluetooth-flow/screens/flutter_blue_plus.dart';
-import 'package:ble_positioning_system/geofencing-flow/screens/geofencing.dart';
 import 'package:ble_positioning_system/home-flow/screens/homescreen.dart';
 import 'package:flutter/material.dart';
 
 import '../../bluetooth-flow/screens/flutter_bluetooth_serial.dart';
+import '../../museum-flow/screens/museum_homescreen.dart';
 
 class NavScreen extends StatefulWidget {
   const NavScreen({Key? key}) : super(key: key);
@@ -14,46 +14,6 @@ class NavScreen extends StatefulWidget {
 
 class _NavScreenState extends State<NavScreen> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: Schools',
-      style: optionStyle,
-    ),
-  ];
-
-  void _onItemTapped(int index) {
-    switch (index) {
-      case 0:
-        Navigator.pushNamed(context, "/");
-        break;
-      case 1:
-        Navigator.pushNamed(context, "GeoFencing");
-        break;
-      case 2:
-        Navigator.pushNamed(context, "flutterBluePlus");
-        break;
-      case 3:
-        Navigator.pushNamed(context, "flutter_bluetooth_serial");
-        break;
-    }
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
 
   late PageController _pageController;
   @override
@@ -128,7 +88,7 @@ class _NavScreenState extends State<NavScreen> {
         controller: _pageController,
         children: [
           HomeScreen(),
-          GeoFencing(),
+          Museum(),
           Flutter_Blue_Plus(),
           Flutter_Bluetooth_Serial(),
         ],

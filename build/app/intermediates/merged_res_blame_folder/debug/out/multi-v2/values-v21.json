@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-28:/values-v21/values-v21.xml",
+            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-29:/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/raghavendiran/.gradle/caches/transforms-3/6f1ac482aaf191ad8f63c310f97dc5d3/transformed/appcompat-1.3.0/res/values-v21/values-v21.xml",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/res/values-v21/values-v21.xml",
+                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/9578ebd2933996235787291919ab3732/transformed/core-1.8.0/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

@@ -50,360 +50,370 @@
 28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 28-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:5-79
 28-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:22-76
-29    <!--
-30         New Bluetooth permissions in Android 12
-31           https://developer.android.com/about/versions/12/features/bluetooth-permissions
-32    -->
-33    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-33-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-73
-33-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-70
-34    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- Request legacy Bluetooth permissions on older devices. -->
-34-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-76
-34-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-73
-35    <uses-permission
-35-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
-36        android:name="android.permission.BLUETOOTH"
-36-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-52
-37        android:maxSdkVersion="30"
-37-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-35
-38        android:required="false" />
-38-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:12:9-33
-39    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-39-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-81
-39-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-78
-40
-41    <uses-feature
-41-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:35
-42        android:name="android.hardware.bluetooth_le"
-42-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-53
-43        android:required="true" />
-43-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-32
-44
-45    <application
-46        android:name="android.app.Application"
-47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-47-->[androidx.core:core:1.6.0] /Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
-48        android:debuggable="true"
-49        android:icon="@mipmap/ic_launcher"
-50        android:label="Smart Museum" >
-51        <service
-52            android:name="com.pravera.flutter_foreground_task.service.ForegroundService"
-53            android:foregroundServiceType="location"
-54            android:stopWithTask="true" />
-55
-56        <activity
-57            android:name="com.raghavBLE.ble_positioning_system.MainActivity"
-58            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-59            android:exported="true"
-60            android:hardwareAccelerated="true"
-61            android:launchMode="singleTop"
-62            android:theme="@style/LaunchTheme"
-63            android:windowSoftInputMode="adjustResize" >
-64
-65            <!--
-66                 Specifies an Android theme to apply to this Activity as soon as
-67                 the Android process has started. This theme is visible to the user
-68                 while the Flutter UI initializes. After that, this theme continues
-69                 to determine the Window background behind the Flutter UI.
-70            -->
-71            <meta-data
-72                android:name="io.flutter.embedding.android.NormalTheme"
-73                android:resource="@style/NormalTheme" />
-74
-75            <intent-filter>
-76                <action android:name="android.intent.action.MAIN" />
-77
-78                <category android:name="android.intent.category.LAUNCHER" />
-79            </intent-filter>
-80        </activity>
-81        <!--
-82             Don't delete the meta-data below.
-83             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-84        -->
-85        <meta-data
-86            android:name="flutterEmbedding"
-87            android:value="2" />
-88
-89        <service
-89-->[:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-90            android:name="com.google.firebase.components.ComponentDiscoveryService"
-90-->[:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
-91            android:directBootAware="true"
-91-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
-92            android:exported="false" >
-92-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:66:13-37
-93            <meta-data
-93-->[:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
-94                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-94-->[:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
-95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
-96            <meta-data
-96-->[:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
-97                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-97-->[:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
-98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+29
+30    <queries>
+30-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:15:5-19:15
+31        <intent>
+31-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:16:9-18:18
+32            <action android:name="android.intent.action.TTS_SERVICE" />
+32-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:17:13-72
+32-->/Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:17:21-69
+33        </intent>
+34    </queries>
+35    <!--
+36         New Bluetooth permissions in Android 12
+37           https://developer.android.com/about/versions/12/features/bluetooth-permissions
+38    -->
+39    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+39-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-73
+39-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-70
+40    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- Request legacy Bluetooth permissions on older devices. -->
+40-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-76
+40-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-73
+41    <uses-permission
+41-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
+42        android:name="android.permission.BLUETOOTH"
+42-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-52
+43        android:maxSdkVersion="30"
+43-->[:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-35
+44        android:required="false" />
+44-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:12:9-33
+45    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+45-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-81
+45-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-78
+46
+47    <uses-feature
+47-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:35
+48        android:name="android.hardware.bluetooth_le"
+48-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-53
+49        android:required="true" />
+49-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-32
+50
+51    <application
+52        android:name="android.app.Application"
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.8.0] /Users/raghavendiran/.gradle/caches/transforms-3/9578ebd2933996235787291919ab3732/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+54        android:debuggable="true"
+55        android:icon="@mipmap/ic_launcher"
+56        android:label="Smart Museum" >
+57        <service
+58            android:name="com.pravera.flutter_foreground_task.service.ForegroundService"
+59            android:foregroundServiceType="location"
+60            android:stopWithTask="true" />
+61
+62        <activity
+63            android:name="com.raghavBLE.ble_positioning_system.MainActivity"
+64            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+65            android:exported="true"
+66            android:hardwareAccelerated="true"
+67            android:launchMode="singleTop"
+68            android:theme="@style/LaunchTheme"
+69            android:windowSoftInputMode="adjustResize" >
+70
+71            <!--
+72                 Specifies an Android theme to apply to this Activity as soon as
+73                 the Android process has started. This theme is visible to the user
+74                 while the Flutter UI initializes. After that, this theme continues
+75                 to determine the Window background behind the Flutter UI.
+76            -->
+77            <meta-data
+78                android:name="io.flutter.embedding.android.NormalTheme"
+79                android:resource="@style/NormalTheme" />
+80
+81            <intent-filter>
+82                <action android:name="android.intent.action.MAIN" />
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+85            </intent-filter>
+86        </activity>
+87        <!--
+88             Don't delete the meta-data below.
+89             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+90        -->
+91        <meta-data
+92            android:name="flutterEmbedding"
+93            android:value="2" />
+94
+95        <service
+95-->[:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+96            android:name="com.google.firebase.components.ComponentDiscoveryService"
+96-->[:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+97            android:directBootAware="true"
+97-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
+98            android:exported="false" >
+98-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:66:13-37
 99            <meta-data
-99-->[:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
-100                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-100-->[:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+99-->[:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+100                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+100-->[:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+101-->[:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 102            <meta-data
-102-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
-103                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-103-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+102-->[:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+103                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+103-->[:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
 104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
+104-->[:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 105            <meta-data
-105-->[com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:19:13-21:85
-106                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-106-->[com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:20:17-111
+105-->[:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+106-->[:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 107                android:value="com.google.firebase.components.ComponentRegistrar" />
-107-->[com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:21:17-82
-108        </service>
-109
-110        <receiver
-110-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-24:38
-111            android:name="com.umair.beacons_plugin.BeaconsBroadcastReceiver"
-111-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-77
-112            android:enabled="true" />
-112-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-35
-113        <receiver
-113-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-32:20
-114            android:name="com.umair.beacons_plugin.RebootBroadcastReceiver"
-114-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-76
-115            android:enabled="true"
-115-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-35
-116            android:exported="true" >
-116-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-36
-117            <intent-filter>
-117-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
-118                <action android:name="android.intent.action.BOOT_COMPLETED" />
-118-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-79
-118-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-76
-119            </intent-filter>
-120        </receiver>
-121
-122        <service android:name="com.umair.beacons_plugin.BeaconsDiscoveryService" />
-122-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-84
-122-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:34:18-81
-123        <service
-123-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-39:38
-124            android:name="org.altbeacon.beacon.service.BeaconService"
-124-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-70
-125            android:enabled="true"
-125-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-35
-126            android:exported="false"
-126-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:33:13-37
-127            android:isolatedProcess="false"
-127-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-44
-128            android:label="beacon" />
-128-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-35
+107-->[:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
+109                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+109-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:19:13-21:85
+112                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+112-->[com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:20:17-111
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran/.gradle/caches/transforms-3/234412b151ad068267ac852f2b1f26f2/transformed/jetified-firebase-firestore-24.4.0/AndroidManifest.xml:21:17-82
+114        </service>
+115
+116        <receiver
+116-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-24:38
+117            android:name="com.umair.beacons_plugin.BeaconsBroadcastReceiver"
+117-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-77
+118            android:enabled="true" />
+118-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-35
+119        <receiver
+119-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-32:20
+120            android:name="com.umair.beacons_plugin.RebootBroadcastReceiver"
+120-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-76
+121            android:enabled="true"
+121-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-35
+122            android:exported="true" >
+122-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-36
+123            <intent-filter>
+123-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
+124                <action android:name="android.intent.action.BOOT_COMPLETED" />
+124-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-79
+124-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-76
+125            </intent-filter>
+126        </receiver>
+127
+128        <service android:name="com.umair.beacons_plugin.BeaconsDiscoveryService" />
+128-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-84
+128-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:34:18-81
 129        <service
-129-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-42:38
-130            android:name="org.altbeacon.beacon.BeaconIntentProcessor"
-130-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-70
+129-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-39:38
+130            android:name="org.altbeacon.beacon.service.BeaconService"
+130-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-70
 131            android:enabled="true"
-131-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-35
-132            android:exported="false" />
-132-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:39:13-37
-133
-134        <receiver
-134-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:20:9-28:20
-135            android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver"
-135-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:21:13-81
-136            android:exported="false" >
-136-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:22:13-37
-137            <intent-filter>
-137-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:23:13-27:29
-138                <action android:name="android.intent.action.BOOT_COMPLETED" />
-138-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-79
-138-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-76
-139                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-139-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:25:17-87
-139-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:25:25-84
-140                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-140-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:26:17-90
-140-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:26:25-87
-141            </intent-filter>
-142        </receiver>
-143
-144        <service
-144-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:40:9-50:19
-145            android:name="org.altbeacon.beacon.service.ScanJob"
-145-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:41:13-64
-146            android:exported="false"
-146-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:42:13-37
-147            android:permission="android.permission.BIND_JOB_SERVICE" >
-147-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:43:13-69
-148            <meta-data
-148-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:44:13-46:45
-149                android:name="immediateScanJobId"
-149-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:45:17-50
-150                android:value="208352939" />
-150-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:46:17-42
-151            <meta-data
-151-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:47:13-49:45
-152                android:name="periodicScanJobId"
-152-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:48:17-49
-153                android:value="208352940" />
-153-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:49:17-42
-154        </service>
-155        <service
-155-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:51:9-58:19
-156            android:name="org.altbeacon.bluetooth.BluetoothTestJob"
-156-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:52:13-68
-157            android:exported="false"
-157-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:53:13-37
-158            android:permission="android.permission.BIND_JOB_SERVICE" >
-158-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:54:13-69
-159            <meta-data
-159-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:55:13-57:46
-160                android:name="jobId"
-160-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:56:17-37
-161                android:value="1799803768" />
-161-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:57:17-43
-162        </service>
-163
-164        <uses-library
-164-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-165            android:name="androidx.window.extensions"
-165-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-166            android:required="false" />
-166-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-167        <uses-library
-167-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-168            android:name="androidx.window.sidecar"
-168-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-169            android:required="false" />
-169-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-170
-171        <activity
-171-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
-172            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-172-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
-173            android:excludeFromRecents="true"
-173-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
-174            android:exported="true"
-174-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
-175            android:launchMode="singleTask"
-175-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
-176            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-176-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
-177            <intent-filter>
-177-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
-178                <action android:name="android.intent.action.VIEW" />
-178-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
-178-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
-179
-180                <category android:name="android.intent.category.DEFAULT" />
-180-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
-180-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
-181                <category android:name="android.intent.category.BROWSABLE" />
-181-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
-181-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
-182
-183                <data
-183-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
-184                    android:host="firebase.auth"
-184-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
-185                    android:path="/"
-185-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
-186                    android:scheme="genericidp" />
-186-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
-187            </intent-filter>
-188        </activity>
-189        <activity
-189-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
-190            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-190-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
-191            android:excludeFromRecents="true"
-191-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
-192            android:exported="true"
-192-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
-193            android:launchMode="singleTask"
-193-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
-194            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-194-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
-195            <intent-filter>
-195-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
-196                <action android:name="android.intent.action.VIEW" />
-196-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
-196-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
-197
-198                <category android:name="android.intent.category.DEFAULT" />
-198-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
-198-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
-199                <category android:name="android.intent.category.BROWSABLE" />
-199-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
-199-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
-200
-201                <data
-201-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
-202                    android:host="firebase.auth"
-202-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
-203                    android:path="/"
-203-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
-204                    android:scheme="recaptcha" />
-204-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
-205            </intent-filter>
-206        </activity>
-207
-208        <provider
-208-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
-209            android:name="com.google.firebase.provider.FirebaseInitProvider"
-209-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
-210            android:authorities="com.raghavBLE.ble_positioning_system.firebaseinitprovider"
-210-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:27:13-72
-211            android:directBootAware="true"
-211-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:28:13-43
-212            android:exported="false"
-212-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:29:13-37
-213            android:initOrder="100" />
-213-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
-214
-215        <activity
-215-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:23:9-27:75
-216            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-216-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:24:13-93
-217            android:excludeFromRecents="true"
-217-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:25:13-46
+131-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-35
+132            android:exported="false"
+132-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:33:13-37
+133            android:isolatedProcess="false"
+133-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-44
+134            android:label="beacon" />
+134-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-35
+135        <service
+135-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-42:38
+136            android:name="org.altbeacon.beacon.BeaconIntentProcessor"
+136-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-70
+137            android:enabled="true"
+137-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-35
+138            android:exported="false" />
+138-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:39:13-37
+139
+140        <receiver
+140-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:20:9-28:20
+141            android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver"
+141-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:21:13-81
+142            android:exported="false" >
+142-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:22:13-37
+143            <intent-filter>
+143-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:23:13-27:29
+144                <action android:name="android.intent.action.BOOT_COMPLETED" />
+144-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-79
+144-->[:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-76
+145                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+145-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:25:17-87
+145-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:25:25-84
+146                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+146-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:26:17-90
+146-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:26:25-87
+147            </intent-filter>
+148        </receiver>
+149
+150        <service
+150-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:40:9-50:19
+151            android:name="org.altbeacon.beacon.service.ScanJob"
+151-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:41:13-64
+152            android:exported="false"
+152-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:42:13-37
+153            android:permission="android.permission.BIND_JOB_SERVICE" >
+153-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:43:13-69
+154            <meta-data
+154-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:44:13-46:45
+155                android:name="immediateScanJobId"
+155-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:45:17-50
+156                android:value="208352939" />
+156-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:46:17-42
+157            <meta-data
+157-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:47:13-49:45
+158                android:name="periodicScanJobId"
+158-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:48:17-49
+159                android:value="208352940" />
+159-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:49:17-42
+160        </service>
+161        <service
+161-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:51:9-58:19
+162            android:name="org.altbeacon.bluetooth.BluetoothTestJob"
+162-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:52:13-68
+163            android:exported="false"
+163-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:53:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" >
+164-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:54:13-69
+165            <meta-data
+165-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:55:13-57:46
+166                android:name="jobId"
+166-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:56:17-37
+167                android:value="1799803768" />
+167-->[org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:57:17-43
+168        </service>
+169
+170        <uses-library
+170-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+171            android:name="androidx.window.extensions"
+171-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+172            android:required="false" />
+172-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+173        <uses-library
+173-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+174            android:name="androidx.window.sidecar"
+174-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+175            android:required="false" />
+175-->[androidx.window:window:1.0.0-beta04] /Users/raghavendiran/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+176
+177        <activity
+177-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
+178            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+178-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
+179            android:excludeFromRecents="true"
+179-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
+180            android:exported="true"
+180-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
+181            android:launchMode="singleTask"
+181-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
+182            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+182-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
+183            <intent-filter>
+183-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
+184                <action android:name="android.intent.action.VIEW" />
+184-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
+184-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
+185
+186                <category android:name="android.intent.category.DEFAULT" />
+186-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
+186-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
+187                <category android:name="android.intent.category.BROWSABLE" />
+187-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+187-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+188
+189                <data
+189-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
+190                    android:host="firebase.auth"
+190-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
+191                    android:path="/"
+191-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
+192                    android:scheme="genericidp" />
+192-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
+193            </intent-filter>
+194        </activity>
+195        <activity
+195-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
+196            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+196-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
+197            android:excludeFromRecents="true"
+197-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
+198            android:exported="true"
+198-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
+199            android:launchMode="singleTask"
+199-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
+200            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+200-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
+201            <intent-filter>
+201-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
+202                <action android:name="android.intent.action.VIEW" />
+202-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
+202-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
+203
+204                <category android:name="android.intent.category.DEFAULT" />
+204-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
+204-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
+205                <category android:name="android.intent.category.BROWSABLE" />
+205-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+205-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+206
+207                <data
+207-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
+208                    android:host="firebase.auth"
+208-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
+209                    android:path="/"
+209-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
+210                    android:scheme="recaptcha" />
+210-->[com.google.firebase:firebase-auth:21.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/873b6a3b46f87d14a5a2960c486caa17/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
+211            </intent-filter>
+212        </activity>
+213
+214        <provider
+214-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+215            android:name="com.google.firebase.provider.FirebaseInitProvider"
+215-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+216            android:authorities="com.raghavBLE.ble_positioning_system.firebaseinitprovider"
+216-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+217            android:directBootAware="true"
+217-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:28:13-43
 218            android:exported="false"
-218-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:26:13-37
-219            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-219-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:27:13-72
-220        <!--
-221            Service handling Google Sign-In user revocation. For apps that do not integrate with
-222            Google Sign-In, this service will never be started.
-223        -->
-224        <service
-224-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:33:9-37:51
-225            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-225-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:34:13-89
-226            android:exported="true"
-226-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:35:13-36
-227            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-227-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:36:13-107
-228            android:visibleToInstantApps="true" />
-228-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:37:13-48
-229
-230        <activity
-230-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-231            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-231-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-232            android:exported="false"
-232-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-233            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-233-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-234
-235        <meta-data
-235-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-236            android:name="com.google.android.gms.version"
-236-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-237            android:value="@integer/google_play_services_version" />
-237-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-238    </application>
-239
-240</manifest>
+218-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+219            android:initOrder="100" />
+219-->[com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
+220
+221        <activity
+221-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:23:9-27:75
+222            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+222-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:24:13-93
+223            android:excludeFromRecents="true"
+223-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:25:13-46
+224            android:exported="false"
+224-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:26:13-37
+225            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+225-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:27:13-72
+226        <!--
+227            Service handling Google Sign-In user revocation. For apps that do not integrate with
+228            Google Sign-In, this service will never be started.
+229        -->
+230        <service
+230-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:33:9-37:51
+231            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+231-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:34:13-89
+232            android:exported="true"
+232-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:35:13-36
+233            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+233-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:36:13-107
+234            android:visibleToInstantApps="true" />
+234-->[com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:37:13-48
+235
+236        <activity
+236-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+237            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+237-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+238            android:exported="false"
+238-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+239            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+239-->[com.google.android.gms:play-services-base:18.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+240
+241        <meta-data
+241-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+242            android:name="com.google.android.gms.version"
+242-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+243            android:value="@integer/google_play_services_version" />
+243-->[com.google.android.gms:play-services-basement:18.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+244    </application>
+245
+246</manifest>

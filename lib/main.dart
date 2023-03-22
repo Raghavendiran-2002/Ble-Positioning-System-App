@@ -10,6 +10,7 @@ import 'bluetooth-flow/screens/flutter_bluetooth_serial.dart';
 import 'firebase_options.dart';
 import 'geofencing-flow/screens/geofencing.dart';
 import 'home-flow/screens/navScreen.dart';
+import 'museum-flow/screens/museum_homescreen.dart';
 import 'nwarehouse-flow/screens/nwarehousescreen.dart';
 
 void main() async {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         fontFamily: "RobotoMono",
-        scaffoldBackgroundColor: Color(0xFF303234),
+        scaffoldBackgroundColor: Color(0xFF000000),
         textTheme: TextTheme(
           displayMedium: TextStyle(color: Colors.white),
         ),
@@ -42,6 +43,7 @@ class MyApp extends StatelessWidget {
         "login": (context) => LoginPage(),
         "flutterBeacon": (context) => Beacons_Plugin(),
         "flutterBluePlus": (context) => Flutter_Blue_Plus(),
+        "museum": (context) => Museum(),
         "GeoFencing": (context) => GeoFencing(),
         "flutter_bluetooth_serial": (context) => Flutter_Bluetooth_Serial(),
         "nwarehouse": (context) => NwareHouseScreen(),

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-28:/values-mr/values-mr.xml",
+            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-29:/values-mr/values-mr.xml",
             "map": [
                 {
                     "source": "/Users/raghavendiran/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/res/values-mr/values.xml",
@@ -35,23 +35,6 @@
                         "startOffsets": "5497,5752,5853,5964",
                         "endColumns": "100,100,110,101",
                         "endOffsets": "5593,5848,5959,6061"
-                    }
-                },
-                {
-                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/res/values-mr/values-mr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "110",
-                        "startColumns": "4",
-                        "startOffsets": "9888",
-                        "endColumns": "100",
-                        "endOffsets": "9984"
                     }
                 },
                 {
@@ -105,6 +88,23 @@
                         "startOffsets": "3338,3445,3613,3736,3848,3993,4114,4222,4462,4612,4720,4874,4998,5137,5290,5350,5416",
                         "endColumns": "106,167,122,111,144,120,107,96,149,107,153,123,138,152,59,65,80",
                         "endOffsets": "3440,3608,3731,3843,3988,4109,4217,4314,4607,4715,4869,4993,5132,5285,5345,5411,5492"
+                    }
+                },
+                {
+                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/9578ebd2933996235787291919ab3732/transformed/core-1.8.0/res/values-mr/values-mr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "110",
+                        "startColumns": "4",
+                        "startOffsets": "9888",
+                        "endColumns": "100",
+                        "endOffsets": "9984"
                     }
                 }
             ]

@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
+import 'package:flutter_tts/flutter_tts.dart';
+import 'package:lottie/lottie.dart';
 
 class Flutter_Blue_Plus extends StatefulWidget {
   const Flutter_Blue_Plus({Key? key}) : super(key: key);
@@ -12,7 +14,12 @@ class Flutter_Blue_Plus extends StatefulWidget {
 
 class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
   FlutterBluePlus flutterBlue = FlutterBluePlus.instance;
+  FlutterTts flutterTts = FlutterTts();
   Timer? timer;
+  Map<String, String> beaconInfos = {
+    "60:77:71:8E:74:1B": "img1",
+    "60:77:71:8E:63:12": "shiva"
+  };
   List<String> DeviceID = [
     // "94:B9:7E:D5:CD:F6",
     "60:77:71:8E:74:1B", // Beacon 1
@@ -20,32 +27,26 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
     "60:77:71:8E:63:12", // Beacon 2
     "72:7F:50:B3:92:E4"
   ];
+  FlutterTts ftts = FlutterTts();
+
+  List<bool> isVisited = [false, false];
   List<ScanResult> scanResult = [];
   bool isScanning = false;
-  late bool isActive;
+  final stack = Stack<ScanResult>();
+
+  // myStack.push('Green Eggs and Ham');
+  // myStack.push('War and Peace');
+  // myStack.push('Moby Dick');
+  // while (myStack.isNotEmpty) {
+  // print(myStack.pop());
+  // }
+
   @override
   void initState() {
     super.initState();
-    isActive = true;
     scanSpecificDevice();
-    timer = Timer.periodic(Duration(seconds: 2), (Timer t) {
-      scanSpecificDevice();
-      // if (scanResult.length == 2 && isActive && isScanning) {
-      if (scanResult.length == 2 && isActive) {
-        print("Comparing");
-        if (scanResult[0].rssi < scanResult[1].rssi) {
-          displaySnackBar(scanResult[1].device.name, "img1");
-        } else if (scanResult[0].rssi > scanResult[1].rssi) {
-          displaySnackBar(scanResult[0].device.name, "img2");
-        }
-        isActive = false;
-      }
-      // isScanning ? null : scanSpecificDevice();
-    });
-    timer = Timer.periodic(Duration(seconds: 10), (Timer t) {
-      setState(() {
-        isActive = true;
-      });
+    timer = Timer.periodic(Duration(seconds: 3), (Timer t) {
+      displayBeacon();
     });
   }
 
@@ -58,8 +59,55 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
     }
   }
 
+  void displayBeacon() {
+    scanSpecificDevice();
+    if (scanResult.length == 1) {
+      if (-50 < scanResult[0].rssi) {
+        if (!isVisited[0]) {
+          displaySnackBar(scanResult[0].device.name, "img1");
+          speakText("image1");
+          isVisited[0] = true;
+        }
+      }
+    }
+    if (scanResult.length == 2) {
+      if (-40 < scanResult[1].rssi && -40 > scanResult[0].rssi) {
+        if (!isVisited[1]) {
+          displaySnackBar(scanResult[1].device.name, "img1");
+          speakText("image1");
+          isVisited[1] = true;
+        }
+      } else if (-40 < scanResult[0].rssi && -40 > scanResult[1].rssi) {
+        if (!isVisited[0]) {
+          displaySnackBar(scanResult[1].device.name, "shiva");
+          speakText("image2");
+          isVisited[0] = true;
+        }
+      }
+    }
+    // if (scanResult.length == 2) {
+    //   print("Comparing");
+    //   if (scanResult[0].rssi < scanResult[1].rssi) {
+    //     print(scanResult[1].device.name);
+    //     displaySnackBar(scanResult[1].device.name, "shiva");
+    //   } else if (scanResult[0].rssi > scanResult[1].rssi) {
+    //     print(scanResult[0].device.name);
+    //     displaySnackBar(scanResult[0].device.name, "img1");
+    //   }
+    // }
+  }
+
+  void speakText(String voice) async {
+    var result = await ftts.speak("Hello World, ${voice}");
+    if (result == 1) {
+      //speaking
+    } else {
+      //not speaking
+    }
+  }
+
   void displaySnackBar(String message, String imgPath,
-      {Color color = Colors.white, int durationInSeconds = 2}) {
+      {Color color = Colors.white, int durationInSeconds = 1}) {
     SnackBar snackBar = SnackBar(
       content: Column(
         children: [
@@ -84,7 +132,7 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
           )
         ],
       ),
-      backgroundColor: color,
+      backgroundColor: Color(0xFFF6F5EE),
       behavior: SnackBarBehavior.floating,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
@@ -96,14 +144,27 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
   }
 
   void scanSpecificDevice() {
-    flutterBlue.startScan(timeout: Duration(seconds: 100000));
+    flutterBlue.startScan(
+        scanMode: ScanMode.lowPower,
+        macAddresses: ["60:77:71:8E:74:1B", "60:77:71:8E:63:12"],
+        timeout: Duration(seconds: 2));
     flutterBlue.scanResults.listen((results) {
       for (ScanResult r in results) {
-        // print("Running");
         // print("${r.device.name} ${r.rssi} ${r.device.id}");
         setState(() {
           isScanning = true;
         });
+        if (r.device.id.toString() == DeviceID[0] ||
+            r.device.id.toString() == DeviceID[1]) {
+          if (stack.isEmpty) stack.push(r);
+          if (stack.peek == r) {
+            stack.pop();
+            stack.push(r);
+          }
+          print("***************");
+          print(stack.peek);
+        }
+
         if (r.device.id.toString() == DeviceID[0]) {
           // print("${r.device.name} ${r.rssi}");
           if (!scanResult.contains(r)) {
@@ -122,14 +183,6 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
               scanResult[scanResult.indexOf(r)] = r;
             });
           }
-          // } else if (r.device.id.toString() == DeviceID[2]) {
-          //   if (!scanResult.contains(r)) {
-          //     scanResult.add(r);
-          //   } else {
-          //     setState(() {
-          //       scanResult[scanResult.indexOf(r)] = r;
-          //     });
-          //   }
         }
       }
     });
@@ -151,9 +204,16 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.white,
           title: isScanning
-              ? Text('Discovering devices')
-              : Text('Discovered devices'),
+              ? Text(
+                  'Discovering devices',
+                  style: TextStyle(color: Colors.black, fontSize: 20),
+                )
+              : Text(
+                  'Discovered devices',
+                  style: TextStyle(color: Colors.black, fontSize: 20),
+                ),
           actions: <Widget>[
             isScanning
                 ? FittedBox(
@@ -166,17 +226,24 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
                     ),
                   )
                 : IconButton(
-                    icon: Icon(Icons.replay),
+                    icon: Icon(
+                      Icons.replay,
+                      color: Colors.black,
+                    ),
                     onPressed: () {
-                      // flutterBlue.stopScan();
+                      flutterBlue.stopScan();
                       scanSpecificDevice();
                     },
                   ),
             IconButton(
-              icon: Icon(Icons.cancel),
+              icon: Icon(
+                Icons.cancel,
+                color: Colors.black,
+              ),
               onPressed: () {
-                // flutterBlue.stopScan();
-                scanSpecificDevice();
+                print("cancel");
+                flutterBlue.stopScan();
+                // scanSpecificDevice();
               },
             )
           ],
@@ -205,11 +272,12 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
                   ),
                 ),
               ),
+              // Lottie.asset('assets/animations/scanning.json'),
               Expanded(
                 child: ListTileTheme(
                   iconColor: Colors.red,
                   textColor: Colors.black54,
-                  tileColor: Colors.yellow[100],
+                  tileColor: Color(0xFFCBD8D2),
                   style: ListTileStyle.list,
                   dense: true,
                   child: ListView.builder(
@@ -224,11 +292,14 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
                           ),
                           leading:
                               // Text("${BluetoothPackage.instance.scanResult[index].rssi}"),
-                              Text("${scanResult[index].rssi}"),
+                              Text(
+                            "${scanResult[index].rssi}",
+                            style: TextStyle(color: Colors.green),
+                          ),
                           trailing: Text(
                             '${scanResult[index].device.id}',
                             // '${BluetoothPackage.instance.scanResult[index].device.id}',
-                            style: TextStyle(color: Colors.green, fontSize: 15),
+                            style: TextStyle(color: Colors.black, fontSize: 15),
                           ),
                           title: Text(
                               "${scanResult[index].device.name}"), // Text("${BluetoothPackage.instance.scanResult[index].device.name}"),
@@ -238,7 +309,10 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
                   ),
                 ),
               ),
-              // Text("${CompareNode(scanResult[0].rssi, scanResult[1].rssi)}")
+              Expanded(
+                flex: 2,
+                child: Lottie.asset('assets/animations/scanning.json'),
+              )
             ],
           ),
         ),
@@ -246,3 +320,21 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
     );
   }
 }
+
+class Stack<E> {
+  final _list = <E>[];
+
+  void push(E value) => _list.add(value);
+
+  E pop() => _list.removeLast();
+
+  E get peek => _list.last;
+  int get size => _list.length;
+  bool get isEmpty => _list.isEmpty;
+  bool get isNotEmpty => _list.isNotEmpty;
+
+  @override
+  String toString() => _list.toString();
+}
+
+// https://stackoverflow.com/questions/64060944/how-to-implement-a-stack-with-push-and-pop-in-dart

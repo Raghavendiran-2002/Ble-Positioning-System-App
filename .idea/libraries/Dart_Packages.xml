@@ -9,6 +9,13 @@
             </list>
           </value>
         </entry>
+        <entry key="archive">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/archive-3.3.6/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="async">
           <value>
             <list>
@@ -27,6 +34,13 @@
           <value>
             <list>
               <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="carousel_slider">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/carousel_slider-4.2.1/lib" />
             </list>
           </value>
         </entry>
@@ -205,6 +219,13 @@
             </list>
           </value>
         </entry>
+        <entry key="flutter_tts">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_tts-3.6.3/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="flutter_web_plugins">
           <value>
             <list>
@@ -310,6 +331,13 @@
             </list>
           </value>
         </entry>
+        <entry key="lottie">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/lottie-2.3.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="matcher">
           <value>
             <list>
@@ -349,6 +377,13 @@
           <value>
             <list>
               <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.3/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="pointycastle">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/pointycastle-3.7.0/lib" />
             </list>
           </value>
         </entry>
@@ -447,9 +482,11 @@
     </properties>
     <CLASSES>
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/_flutterfire_internals-1.0.12/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/archive-3.3.6/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.10.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/beacons_plugin-2.0.8/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/carousel_slider-4.2.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/characters-1.2.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/clock-1.1.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/cloud_firestore-4.3.1/lib" />
@@ -473,6 +510,7 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_bluetooth_serial-0.4.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_switch-0.3.2/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_tts-3.6.3/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/geolocator-7.7.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/geolocator_android-2.1.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/geolocator_apple-1.2.2/lib" />
@@ -487,12 +525,14 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/intl-0.17.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/js-0.6.5/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/lottie-2.3.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/matcher-0.12.13/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/material_color_utilities-0.2.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/meta-1.8.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/mqtt_client-9.7.4/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/path-1.8.2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.3/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pointycastle-3.7.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/protobuf-2.1.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/quiver-3.2.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/rounded_loading_button-2.1.0/lib" />

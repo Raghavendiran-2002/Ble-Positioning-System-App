@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-28:/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-29:/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/res/values-zh-rHK/values-zh-rHK.xml",
+                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/9578ebd2933996235787291919ab3732/transformed/core-1.8.0/res/values-zh-rHK/values-zh-rHK.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

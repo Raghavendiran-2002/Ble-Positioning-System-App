@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-28:/values-ar/values-ar.xml",
+            "outputFile": "com.raghavBLE.ble_positioning_system.app-mergeDebugResources-29:/values-ar/values-ar.xml",
             "map": [
                 {
                     "source": "/Users/raghavendiran/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/res/values-ar/values.xml",
@@ -18,6 +18,23 @@
                         "startOffsets": "3504,3608,3752,3874,3979,4117,4245,4356,4588,4725,4829,4979,5101,5240,5386,5450,5516",
                         "endColumns": "103,143,121,104,137,127,110,101,136,103,149,121,138,145,63,65,83",
                         "endOffsets": "3603,3747,3869,3974,4112,4240,4351,4453,4720,4824,4974,5096,5235,5381,5445,5511,5595"
+                    }
+                },
+                {
+                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/9578ebd2933996235787291919ab3732/transformed/core-1.8.0/res/values-ar/values-ar.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "114",
+                        "startColumns": "4",
+                        "startOffsets": "10022",
+                        "endColumns": "100",
+                        "endOffsets": "10118"
                     }
                 },
                 {
@@ -88,23 +105,6 @@
                         "startOffsets": "4458",
                         "endColumns": "129",
                         "endOffsets": "4583"
-                    }
-                },
-                {
-                    "source": "/Users/raghavendiran/.gradle/caches/transforms-3/ae42e6c01585f28a5adeac7499fca147/transformed/core-1.6.0/res/values-ar/values-ar.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "114",
-                        "startColumns": "4",
-                        "startOffsets": "10022",
-                        "endColumns": "100",
-                        "endOffsets": "10118"
                     }
                 }
             ]

@@ -6097,6 +6097,9 @@
         
         <attr format="float" name="alpha"/>
         <attr name="android:alpha"/>
+        
+        <attr format="float" name="lStar"/>
+        <attr name="android:lStar"/>
     </declare-styleable>
     <declare-styleable name="CompoundButton">
         <attr name="android:button"/>
