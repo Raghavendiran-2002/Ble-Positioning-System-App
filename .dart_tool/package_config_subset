@@ -110,6 +110,10 @@ flutter_lints
 2.17
 file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/
 file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib/
+flutter_reactive_ble
+2.12
+file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_reactive_ble-5.0.3/
+file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_reactive_ble-5.0.3/lib/
 flutter_switch
 2.12
 file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_switch-0.3.2/
@@ -118,6 +122,10 @@ flutter_tts
 2.12
 file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_tts-3.6.3/
 file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/flutter_tts-3.6.3/lib/
+functional_data
+2.12
+file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/functional_data-1.0.0/
+file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/functional_data-1.0.0/lib/
 geolocator
 2.12
 file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/geolocator-7.7.1/
@@ -214,6 +222,14 @@ quiver
 2.17
 file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/quiver-3.2.1/
 file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/quiver-3.2.1/lib/
+reactive_ble_mobile
+2.12
+file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/reactive_ble_mobile-5.0.3/
+file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/reactive_ble_mobile-5.0.3/lib/
+reactive_ble_platform_interface
+2.12
+file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/reactive_ble_platform_interface-5.0.3/
+file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/reactive_ble_platform_interface-5.0.3/lib/
 rounded_loading_button
 2.12
 file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/rounded_loading_button-2.1.0/

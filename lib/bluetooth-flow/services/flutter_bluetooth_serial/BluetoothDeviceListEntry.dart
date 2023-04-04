@@ -12,10 +12,13 @@ class BluetoothDeviceListEntry extends ListTile {
           onTap: onTap,
           onLongPress: onLongPress,
           enabled: enabled,
-          leading:
-              Icon(Icons.devices), // @TODO . !BluetoothClass! class aware icon
-          title: Text(device.name ?? ""),
-          subtitle: Text(device.address.toString()),
+          leading: Icon(
+            Icons.devices,
+            color: Colors.grey,
+          ), // @TODO . !BluetoothClass! class aware icon
+          title: Text(device.name ?? "", style: TextStyle(color: Colors.white)),
+          subtitle: Text(device.address.toString(),
+              style: TextStyle(color: Colors.white)),
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[

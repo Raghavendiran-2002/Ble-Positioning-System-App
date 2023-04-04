@@ -62,6 +62,7 @@ MERGED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/s
 MERGED from [:firebase_auth] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:reactive_ble_mobile] /Users/raghavendiran/Development/MiniProject/MobileApp/build/reactive_ble_mobile/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-25:12
 MERGED from [:geolocator_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-14:12
@@ -76,6 +77,7 @@ MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/raghavendiran
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8ffc5025097db0a85dbfcff25ccb715a/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/797ea3c6e2a6056d70d3a480c7b40edf/transformed/jetified-firebase-appcheck-interop-16.1.0/AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:15:1-39:12
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:2:1-27:12
 MERGED from [com.google.android.material:material:1.3.0] /Users/raghavendiran/.gradle/caches/transforms-3/5eb308ae6b6cc49c7927570f875e85a0/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/raghavendiran/.gradle/caches/transforms-3/6f1ac482aaf191ad8f63c310f97dc5d3/transformed/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
@@ -125,6 +127,7 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/raghavendiran/.gra
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e59fb9a62900ddc223c67ed8f306867/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ac12fa86d7559c748dfa0f5bb386ec83/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/abb187d0bf205c6a49137269cc58389b/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/raghavendiran/.gradle/caches/transforms-3/9c350ee1e8cba4f3493cc5da88ff25e7/transformed/jetified-rxandroid-2.1.1/AndroidManifest.xml:15:1-20:12
 MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/raghavendiran/.gradle/caches/transforms-3/a2856128e94cdfdf5a5299d4bb726a0d/transformed/jetified-timber-4.7.1/AndroidManifest.xml:2:1-9:12
 MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/3795200b4ef80330da39fee63b1e3f99/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -169,6 +172,8 @@ MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/tr
 		ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from /Users/raghavendiran/Development/MiniProject/MobileApp/android/app/src/main/AndroidManifest.xml:6:5-74
+MERGED from [:reactive_ble_mobile] /Users/raghavendiran/Development/MiniProject/MobileApp/build/reactive_ble_mobile/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-15:38
+MERGED from [:reactive_ble_mobile] /Users/raghavendiran/Development/MiniProject/MobileApp/build/reactive_ble_mobile/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-15:38
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-22:38
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-22:38
 MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-74
@@ -177,8 +182,10 @@ MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/Mobil
 MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-74
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:13:5-15:36
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:13:5-15:36
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:13:5-15:38
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:13:5-15:38
 	android:maxSdkVersion
-		ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-35
+		ADDED from [:reactive_ble_mobile] /Users/raghavendiran/Development/MiniProject/MobileApp/build/reactive_ble_mobile/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-35
 	android:required
 		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:15:9-33
 	android:name
@@ -245,6 +252,8 @@ MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/Mobi
 MERGED from [:cloud_firestore] /Users/raghavendiran/Development/MiniProject/MobileApp/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:reactive_ble_mobile] /Users/raghavendiran/Development/MiniProject/MobileApp/build/reactive_ble_mobile/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:reactive_ble_mobile] /Users/raghavendiran/Development/MiniProject/MobileApp/build/reactive_ble_mobile/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:geolocator_android] /Users/raghavendiran/Development/MiniProject/MobileApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -273,6 +282,8 @@ MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/raghav
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/raghavendiran/.gradle/caches/transforms-3/797ea3c6e2a6056d70d3a480c7b40edf/transformed/jetified-firebase-appcheck-interop-16.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.material:material:1.3.0] /Users/raghavendiran/.gradle/caches/transforms-3/5eb308ae6b6cc49c7927570f875e85a0/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.3.0] /Users/raghavendiran/.gradle/caches/transforms-3/5eb308ae6b6cc49c7927570f875e85a0/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/raghavendiran/.gradle/caches/transforms-3/e926d08c467eb37eaa3231a7738e9858/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
@@ -371,6 +382,8 @@ MERGED from [androidx.print:print:1.0.0] /Users/raghavendiran/.gradle/caches/tra
 MERGED from [androidx.print:print:1.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/ac12fa86d7559c748dfa0f5bb386ec83/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/abb187d0bf205c6a49137269cc58389b/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/raghavendiran/.gradle/caches/transforms-3/abb187d0bf205c6a49137269cc58389b/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/raghavendiran/.gradle/caches/transforms-3/9c350ee1e8cba4f3493cc5da88ff25e7/transformed/jetified-rxandroid-2.1.1/AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/raghavendiran/.gradle/caches/transforms-3/9c350ee1e8cba4f3493cc5da88ff25e7/transformed/jetified-rxandroid-2.1.1/AndroidManifest.xml:18:5-43
 MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/raghavendiran/.gradle/caches/transforms-3/a2856128e94cdfdf5a5299d4bb726a0d/transformed/jetified-timber-4.7.1/AndroidManifest.xml:5:5-43
 MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/raghavendiran/.gradle/caches/transforms-3/a2856128e94cdfdf5a5299d4bb726a0d/transformed/jetified-timber-4.7.1/AndroidManifest.xml:5:5-43
 MERGED from [io.grpc:grpc-android:1.48.1] /Users/raghavendiran/.gradle/caches/transforms-3/36d6b5b99584304fd36c03613c418df8/transformed/jetified-grpc-android-1.48.1/AndroidManifest.xml:5:5-7:41
@@ -423,28 +436,40 @@ ADDED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileA
 		ADDED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [:firebase_core] /Users/raghavendiran/Development/MiniProject/MobileApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+uses-permission#android.permission.BLUETOOTH
+ADDED from [:reactive_ble_mobile] /Users/raghavendiran/Development/MiniProject/MobileApp/build/reactive_ble_mobile/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-12:38
+MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
+MERGED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
+MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:10:5-12:36
+MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:10:5-12:36
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:10:5-12:38
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:10:5-12:38
+	android:maxSdkVersion
+		ADDED from [:reactive_ble_mobile] /Users/raghavendiran/Development/MiniProject/MobileApp/build/reactive_ble_mobile/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-35
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:12:9-33
+	android:name
+		ADDED from [:reactive_ble_mobile] /Users/raghavendiran/Development/MiniProject/MobileApp/build/reactive_ble_mobile/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-52
 uses-permission#android.permission.BLUETOOTH_SCAN
 ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-73
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:22:5-25:31
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:22:5-25:31
+	android:usesPermissionFlags
+		ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:24:9-55
+	tools:targetApi
+		ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:25:9-28
 	android:name
 		ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-70
 uses-permission#android.permission.BLUETOOTH_CONNECT
 ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-76
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:21:5-76
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:21:5-76
 	android:name
 		ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-73
-uses-permission#android.permission.BLUETOOTH
-ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-19:38
-MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [:flutter_bluetooth_serial] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_bluetooth_serial/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:10:5-12:36
-MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:10:5-12:36
-	android:maxSdkVersion
-		ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-35
-	android:required
-		ADDED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:12:9-33
-	android:name
-		ADDED from [:flutter_blue_plus] /Users/raghavendiran/Development/MiniProject/MobileApp/build/flutter_blue_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-52
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from [:beacons_plugin] /Users/raghavendiran/Development/MiniProject/MobileApp/build/beacons_plugin/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-81
 MERGED from [org.altbeacon:android-beacon-library:2.19] /Users/raghavendiran/.gradle/caches/transforms-3/0889aef55a9bd81cb82fd6af831856b2/transformed/jetified-android-beacon-library-2.19/AndroidManifest.xml:16:5-81
@@ -639,6 +664,14 @@ ADDED from [com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gr
 		ADDED from [com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:20.2.0] /Users/raghavendiran/.gradle/caches/transforms-3/704054323e38cc7288e6a94c660806a1/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+uses-permission-sdk-23#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:18:5-88
+	android:name
+		ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:18:29-85
+uses-permission-sdk-23#android.permission.ACCESS_FINE_LOCATION
+ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] /Users/raghavendiran/.gradle/caches/transforms-3/8e8f51913a01c3c01f61a649f7df2902/transformed/jetified-rxandroidble-1.16.0/AndroidManifest.xml:19:29-83
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:20.4.1] /Users/raghavendiran/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents

@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'bluetooth-flow/screens/beacon_plugin.dart';
 import 'bluetooth-flow/screens/flutter_blue_plus.dart';
 import 'bluetooth-flow/screens/flutter_bluetooth_serial.dart';
+import 'bluetooth-flow/services/custom_ble/custom_ble.dart';
 import 'firebase_options.dart';
 import 'geofencing-flow/screens/geofencing.dart';
 import 'home-flow/screens/navScreen.dart';
@@ -35,10 +36,11 @@ class MyApp extends StatelessWidget {
         ),
       ),
       title: 'Smart Museum',
-      initialRoute: "Nav",
+      initialRoute: "custom",
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => HomeScreen(),
+        "custom": (context) => CustomBLE(),
         "Nav": (context) => NavScreen(),
         "login": (context) => LoginPage(),
         "flutterBeacon": (context) => Beacons_Plugin(),

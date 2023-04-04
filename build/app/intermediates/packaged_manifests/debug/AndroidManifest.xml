@@ -31,22 +31,27 @@
         <intent>
             <action android:name="android.intent.action.TTS_SERVICE" />
         </intent>
-    </queries>
-    <!--
-         New Bluetooth permissions in Android 12
-           https://developer.android.com/about/versions/12/features/bluetooth-permissions
-    -->
-    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- Request legacy Bluetooth permissions on older devices. -->
+    </queries> <!-- required for API 18 - 30 -->
     <uses-permission
         android:name="android.permission.BLUETOOTH"
         android:maxSdkVersion="30"
         android:required="false" />
+    <!--
+         New Bluetooth permissions in Android 12
+           https://developer.android.com/about/versions/12/features/bluetooth-permissions
+    -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <uses-feature
         android:name="android.hardware.bluetooth_le"
-        android:required="true" />
+        android:required="true" /> <!-- required for API 23 - 30, no android:maxSdkVersion because of a potential breaking change -->
+    <!-- TODO: add android:maxSdkVersion on 2.0.0 -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name="android.app.Application"

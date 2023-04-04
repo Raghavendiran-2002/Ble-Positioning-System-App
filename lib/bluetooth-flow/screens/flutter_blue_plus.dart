@@ -88,20 +88,10 @@ class _Flutter_Blue_PlusState extends State<Flutter_Blue_Plus> {
         }
       }
     }
-    // if (scanResult.length == 2) {
-    //   print("Comparing");
-    //   if (scanResult[0].rssi < scanResult[1].rssi) {
-    //     print(scanResult[1].device.name);
-    //     displaySnackBar(scanResult[1].device.name, "shiva");
-    //   } else if (scanResult[0].rssi > scanResult[1].rssi) {
-    //     print(scanResult[0].device.name);
-    //     displaySnackBar(scanResult[0].device.name, "img1");
-    //   }
-    // }
   }
 
   void speakText(String voice) async {
-    var result = await ftts.speak("Hello World, ${voice}");
+    var result = await ftts.speak(" ${voice}");
     if (result == 1) {
       //speaking
     } else {
@@ -330,6 +320,7 @@ class Stack<E> {
   void push(E value) => _list.add(value);
 
   E pop() => _list.removeLast();
+  bool contains(K) => _list.contains(K);
 
   E get peek => _list.last;
   int get size => _list.length;
