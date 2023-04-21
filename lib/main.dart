@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         fontFamily: "RobotoMono",
-        scaffoldBackgroundColor: Color(0xFF000000),
+        scaffoldBackgroundColor: Color(0xFFD4D6DA),
         textTheme: TextTheme(
           displayMedium: TextStyle(color: Colors.white),
         ),

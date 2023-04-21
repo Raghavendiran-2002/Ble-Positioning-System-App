@@ -58,17 +58,26 @@ class _CustomBLEState extends State<CustomBLE> {
         print(discoveredDevices.length);
         compareBeacon(discoveredDevices[macAddresses[0]]!,
             discoveredDevices[macAddresses[1]]!);
+      } else {
+        if (discoveredDevices[macAddresses[0]]?.device.name != null &&
+            discoveredDevices[macAddresses[0]]!.rssi > -45) {
+          isDisplayed[0]
+              ? displaySnackBar(
+                  "${discoveredDevices[macAddresses[0]]!.device.name}", "img1")
+              : null;
+          isEnteredBuilding = true;
+          isDisplayed[0] = false;
+        }
       }
       await flutterBlue.stopScan();
       setState(() {
         // discoveredDevices.clear();
         isScanning = false;
       });
-      print("Task Done");
-      print("second scan");
-      discoveredDevices.forEach((key, value) {
-        print("${key} ${value.device.name} ${value.rssi}");
-      });
+      print(discoveredDevices[macAddresses[0]]?.device.name);
+      // discoveredDevices.forEach((key, value) {
+      //   print("${key} ${value.device.name} ${value.rssi}");
+      // });
       setStream(getScanStream()); // New scan
     }, onError: (Object e) {
       print("Some Error " + e.toString());
