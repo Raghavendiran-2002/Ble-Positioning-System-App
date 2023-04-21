@@ -1,4 +1,5 @@
 import 'package:ble_positioning_system/home-flow/screens/homescreen.dart';
+import 'package:ble_positioning_system/home-flow/services/theming.dart';
 import 'package:ble_positioning_system/login-flow/screens/loginscreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         fontFamily: "SFU",
-        scaffoldBackgroundColor: Color(0xFFEFEFE3),
+        scaffoldBackgroundColor: Theming.instance.isLight
+            ? Theming.instance.Light["scaffoldBackgroundColor"]
+            : Theming.instance.Dark["scaffoldBackgroundColor"],
         textTheme: TextTheme(
           displayMedium: TextStyle(color: Colors.white),
         ),

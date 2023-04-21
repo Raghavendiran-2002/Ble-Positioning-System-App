@@ -1,9 +1,11 @@
 import 'dart:async';
 
+import 'package:ble_positioning_system/home-flow/services/theming.dart';
 import 'package:ble_positioning_system/sastra-flow/screens/embeddedinfo.dart';
 import 'package:ble_positioning_system/sastra-flow/screens/sastrainfo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:lottie/lottie.dart';
 
 class CustomBLE extends StatefulWidget {
@@ -108,13 +110,17 @@ class _CustomBLEState extends State<CustomBLE> {
   }
 
   void displaySnackBar(String message, String imgPath,
-      {Color color = Colors.white, int durationInSeconds = 5}) {
+      {int durationInSeconds = 5}) {
     SnackBar snackBar = SnackBar(
       content: Column(
         children: [
           Text(
             message,
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(
+              color: Theming.instance.isLight
+                  ? Theming.instance.Light["snackBarTextColor"]
+                  : Theming.instance.Dark["snackBarTextColor"],
+            ),
           ),
           Image.asset(
             'assets/images/${imgPath}.png',
@@ -138,18 +144,34 @@ class _CustomBLEState extends State<CustomBLE> {
                         );
                   ScaffoldMessenger.of(context).hideCurrentSnackBar();
                 },
-                child: Text("Open"),
+                child: Text(
+                  "Open",
+                  style: TextStyle(
+                    color: Theming.instance.isLight
+                        ? Theming.instance.Light["snackBarTextColor"]
+                        : Theming.instance.Dark["snackBarTextColor"],
+                  ),
+                ),
               ),
               ElevatedButton(
                   onPressed: () {
                     ScaffoldMessenger.of(context).hideCurrentSnackBar();
                   },
-                  child: Text("Close")),
+                  child: Text(
+                    "Close",
+                    style: TextStyle(
+                      color: Theming.instance.isLight
+                          ? Theming.instance.Light["snackBarTextColor"]
+                          : Theming.instance.Dark["snackBarTextColor"],
+                    ),
+                  )),
             ],
           )
         ],
       ),
-      backgroundColor: Color(0xFFF6F5EE),
+      backgroundColor: Theming.instance.isLight
+          ? Theming.instance.Light["snackBarBGcolor"]
+          : Theming.instance.Dark["snackBarBGcolor"],
       behavior: SnackBarBehavior.floating,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
@@ -165,25 +187,24 @@ class _CustomBLEState extends State<CustomBLE> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: isScanning
-              ? Text(
-                  'Discovering devices',
-                  style: TextStyle(color: Colors.black, fontSize: 20),
-                )
-              : Text(
-                  'Discovered devices',
-                  style: TextStyle(color: Colors.black, fontSize: 20),
-                ),
+          backgroundColor: Theming.instance.isLight
+              ? Theming.instance.Light["appBarBgColor"]
+              : Theming.instance.Dark["appBarBgColor"],
+          title: Text(
+            'Beacon 🛸',
+            style: TextStyle(
+                color: Theming.instance.isLight
+                    ? Theming.instance.Light["appBarTextColor"]
+                    : Theming.instance.Dark["appBarTextColor"],
+                fontSize: 20,
+                fontWeight: FontWeight.bold),
+          ),
           actions: <Widget>[
             isScanning
                 ? FittedBox(
-                    child: Container(
-                      margin: EdgeInsets.all(16.0),
-                      child: CircularProgressIndicator(
-                        color: Colors.black,
-                        valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
-                      ),
+                    child: SpinKitWave(
+                      color: Color(0xFFB99E6D),
+                      size: 15.0,
                     ),
                   )
                 : IconButton(
@@ -197,7 +218,7 @@ class _CustomBLEState extends State<CustomBLE> {
                   ),
             IconButton(
               icon: Icon(
-                Icons.cancel,
+                Icons.settings_bluetooth_rounded,
                 color: Colors.black,
               ),
               onPressed: () {
@@ -218,9 +239,10 @@ class _CustomBLEState extends State<CustomBLE> {
               Text(
                 "WELCOME TO SASTRA",
                 style: TextStyle(
-                  fontFamily: "RobotoMono",
                   fontSize: 30,
-                  color: Color(0xFFAC5749),
+                  color: Theming.instance.isLight
+                      ? Theming.instance.Light["welcomeTextColor"]
+                      : Theming.instance.Dark["welcomeTextColor"],
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -239,9 +261,11 @@ class _CustomBLEState extends State<CustomBLE> {
                   child: Lottie.asset('assets/animations/scanning.json')),
               Expanded(
                 child: ListTileTheme(
-                  iconColor: Colors.red,
-                  textColor: Colors.black54,
-                  tileColor: Color(0xFFCBD8D2),
+                  // iconColor: Colors.red,
+                  // textColor: Colors.black54,
+                  tileColor: Theming.instance.isLight
+                      ? Theming.instance.Light["beaconTileColor"]
+                      : Theming.instance.Dark["beaconTileColor"],
                   style: ListTileStyle.list,
                   dense: true,
                   child: ListView.builder(
@@ -250,22 +274,47 @@ class _CustomBLEState extends State<CustomBLE> {
                       return Padding(
                         padding: EdgeInsets.only(top: 10, bottom: 10),
                         child: ListTile(
-                            shape: RoundedRectangleBorder(
-                              side: BorderSide(width: 2),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            leading: Text(
-                              "${discoveredDevices[macAddresses[index]]?.rssi}",
-                              style: TextStyle(color: Colors.green),
-                            ),
-                            trailing: Text(
-                              "${discoveredDevices[macAddresses[index]]?.device.id}",
-                              style:
-                                  TextStyle(color: Colors.black, fontSize: 15),
-                            ),
-                            title: Text(
-                              "${discoveredDevices[macAddresses[index]]?.device.name}",
-                            )),
+                          shape: RoundedRectangleBorder(
+                            side: BorderSide(width: 2),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          leading:
+                              discoveredDevices[macAddresses[index]] == null
+                                  ? null
+                                  : Text(
+                                      "${discoveredDevices[macAddresses[index]]?.rssi}",
+                                      style: TextStyle(color: Colors.green),
+                                    ),
+                          trailing:
+                              discoveredDevices[macAddresses[index]] == null
+                                  ? FittedBox(
+                                      child: SpinKitWave(
+                                        color: Color(0xFFAC5749),
+                                        size: 15.0,
+                                      ),
+                                    )
+                                  : Text(
+                                      "${discoveredDevices[macAddresses[index]]?.device.id}",
+                                      style: TextStyle(
+                                          color: Theming.instance.isLight
+                                              ? Theming.instance
+                                                  .Light["beaconTextListColor"]
+                                              : Theming.instance
+                                                  .Dark["beaconTextListColor"],
+                                          fontSize: 15),
+                                    ),
+                          title: Text(
+                            discoveredDevices[macAddresses[index]] == null
+                                ? ""
+                                : "${discoveredDevices[macAddresses[index]]?.device.name}",
+                            style: TextStyle(
+                                color: Theming.instance.isLight
+                                    ? Theming
+                                        .instance.Light["beaconTextListColor"]
+                                    : Theming
+                                        .instance.Dark["beaconTextListColor"]),
+                          ),
+                        ),
                       );
                     },
                   ),

@@ -1,4 +1,5 @@
 import 'package:ble_positioning_system/home-flow/screens/homescreen.dart';
+import 'package:ble_positioning_system/home-flow/services/theming.dart';
 import 'package:flutter/material.dart';
 
 import '../../bluetooth-flow/screens/flutter_bluetooth_serial.dart';
@@ -30,42 +31,54 @@ class _NavScreenState extends State<NavScreen> {
       bottomNavigationBar: Theme(
         data: ThemeData(
           navigationBarTheme: NavigationBarThemeData(
-            indicatorColor: Color(0xFFABBDAF),
+            indicatorColor: Theming.instance.isLight
+                ? Theming.instance.Light["navigationBarIndicatorColor"]
+                : Theming.instance.Dark["navigationBarIndicatorColor"],
             indicatorShape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(10),
             ),
           ),
         ),
         child: NavigationBar(
-          backgroundColor: Color(0xFFAC5749),
+          backgroundColor: Theming.instance.isLight
+              ? Theming.instance.Light["navigationBarBackgroundColor"]
+              : Theming.instance.Dark["navigationBarBackgroundColor"],
           destinations: [
             NavigationDestination(
               icon: Icon(
                 Icons.museum,
-                color: Colors.black,
+                color: Theming.instance.isLight
+                    ? Theming.instance.Light["navigationBarIconColor"]
+                    : Theming.instance.Dark["navigationBarIconColor"],
               ),
-              label: 'Home',
+              label: Theming.instance.NavNames[0],
             ),
             NavigationDestination(
               icon: Icon(
                 Icons.bluetooth_audio_sharp,
-                color: Colors.black,
+                color: Theming.instance.isLight
+                    ? Theming.instance.Light["navigationBarIconColor"]
+                    : Theming.instance.Dark["navigationBarIconColor"],
               ),
-              label: 'GeoFencing',
+              label: Theming.instance.NavNames[1],
             ),
             NavigationDestination(
               icon: Icon(
                 Icons.settings_bluetooth_sharp,
-                color: Colors.black,
+                color: Theming.instance.isLight
+                    ? Theming.instance.Light["navigationBarIconColor"]
+                    : Theming.instance.Dark["navigationBarIconColor"],
               ),
-              label: 'Discovery',
+              label: Theming.instance.NavNames[2],
             ),
             NavigationDestination(
               icon: Icon(
                 Icons.navigation_outlined,
-                color: Colors.black,
+                color: Theming.instance.isLight
+                    ? Theming.instance.Light["navigationBarIconColor"]
+                    : Theming.instance.Dark["navigationBarIconColor"],
               ),
-              label: 'Discovery',
+              label: Theming.instance.NavNames[3],
             ),
           ],
           selectedIndex: _selectedIndex,

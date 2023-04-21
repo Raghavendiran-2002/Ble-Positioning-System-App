@@ -212,6 +212,13 @@
             </list>
           </value>
         </entry>
+        <entry key="flutter_spinkit">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_spinkit-5.1.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="flutter_switch">
           <value>
             <list>
@@ -538,6 +545,7 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_bluetooth_serial-0.4.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_reactive_ble-5.0.3/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_spinkit-5.1.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_switch-0.3.2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_tts-3.6.3/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/functional_data-1.0.0/lib" />
