@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       title: 'Smart Museum',
-      initialRoute: "custom",
+      initialRoute: "Nav",
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => HomeScreen(),

@@ -15,8 +15,9 @@ class _CustomBLEState extends State<CustomBLE> {
   Timer? timer;
   List<String> macAddresses = ["60:77:71:8E:74:1B", "60:77:71:8E:63:12"];
   bool isScanning = false;
-  final Map<String, ScanResult> discoveredDevices = {};
-
+  Map<String, ScanResult> discoveredDevices = {};
+  bool isEnteredBuilding = false;
+  List<bool> isDisplayed = [true, true];
   @override
   void initState() {
     super.initState();
@@ -45,22 +46,22 @@ class _CustomBLEState extends State<CustomBLE> {
     });
   }
 
-  void updateDevices(ScanResult result) {
-    setState(() {
-      discoveredDevices.update(result.device.id.toString(), (value) => result);
-    });
-  }
-
   void setStream(Stream<ScanResult> stream) async {
     stream.listen((event) {
-      print("data received $event");
+      // print("data received $event");
       setState(() {
         addDevices(event);
       });
     }, onDone: () async {
       // Scan is finished ****************
+      if (discoveredDevices.length == 2) {
+        print(discoveredDevices.length);
+        compareBeacon(discoveredDevices[macAddresses[0]]!,
+            discoveredDevices[macAddresses[1]]!);
+      }
       await flutterBlue.stopScan();
       setState(() {
+        // discoveredDevices.clear();
         isScanning = false;
       });
       print("Task Done");
@@ -68,11 +69,65 @@ class _CustomBLEState extends State<CustomBLE> {
       discoveredDevices.forEach((key, value) {
         print("${key} ${value.device.name} ${value.rssi}");
       });
-
       setStream(getScanStream()); // New scan
     }, onError: (Object e) {
       print("Some Error " + e.toString());
     });
+  }
+
+  void compareBeacon(ScanResult r1, ScanResult r2) {
+    if (r1.rssi > -45) {
+      isDisplayed[0] ? displaySnackBar("${r1.device.name}", "img1") : null;
+      isEnteredBuilding = true;
+      isDisplayed[0] = false;
+    }
+    if (r2.rssi > -45 && isEnteredBuilding) {
+      isDisplayed[1] ? displaySnackBar("${r2.device.name}", "shiva") : null;
+      isDisplayed[1] = false;
+    }
+    // if (r1.rssi > -40 && r2.rssi < -40) {
+    //   displaySnackBar("${r1.device.name}", "img1");
+    // }
+    // if (r2.rssi > -40 && r1.rssi < -40) {
+    //   displaySnackBar("${r2.device.name}", "shiva");
+    // }
+  }
+
+  void displaySnackBar(String message, String imgPath,
+      {Color color = Colors.white, int durationInSeconds = 1}) {
+    SnackBar snackBar = SnackBar(
+      content: Column(
+        children: [
+          Text(
+            message,
+            style: TextStyle(color: Colors.black),
+          ),
+          Image.asset(
+            'assets/images/${imgPath}.png',
+            width: 200,
+            height: 200,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                child: Text("Open"),
+              ),
+              ElevatedButton(onPressed: () {}, child: Text("Close")),
+            ],
+          )
+        ],
+      ),
+      backgroundColor: Color(0xFFF6F5EE),
+      behavior: SnackBarBehavior.floating,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      duration: Duration(seconds: durationInSeconds),
+      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+    );
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
   @override
@@ -117,6 +172,8 @@ class _CustomBLEState extends State<CustomBLE> {
               ),
               onPressed: () {
                 print("cancel");
+                isDisplayed[0] = true;
+                isDisplayed[1] = false;
                 flutterBlue.stopScan();
                 // scanSpecificDevice();
               },

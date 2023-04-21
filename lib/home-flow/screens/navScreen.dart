@@ -1,8 +1,8 @@
-import 'package:ble_positioning_system/bluetooth-flow/screens/flutter_blue_plus.dart';
 import 'package:ble_positioning_system/home-flow/screens/homescreen.dart';
 import 'package:flutter/material.dart';
 
 import '../../bluetooth-flow/screens/flutter_bluetooth_serial.dart';
+import '../../bluetooth-flow/services/custom_ble/custom_ble.dart';
 import '../../museum-flow/screens/museum_homescreen.dart';
 
 class NavScreen extends StatefulWidget {
@@ -87,9 +87,10 @@ class _NavScreenState extends State<NavScreen> {
         },
         controller: _pageController,
         children: [
+          CustomBLE(),
           HomeScreen(),
           Museum(),
-          Flutter_Blue_Plus(),
+          // CustomBLE(),
           Flutter_Bluetooth_Serial(),
         ],
       ),
