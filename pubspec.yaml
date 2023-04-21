@@ -97,9 +97,11 @@ flutter:
     - family: RobotoMono
       fonts:
        - asset: src/fonts/RobotoMono-Italic.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+    - family: SFU
+      fonts:
+       - asset: src/fonts/SFUIDisplay-Light.ttf
   #         style: italic
-  #   - family: Trajan Pro
+  #   - family: Trajan ProR
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf

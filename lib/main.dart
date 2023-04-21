@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
-        fontFamily: "RobotoMono",
-        scaffoldBackgroundColor: Color(0xFFD4D6DA),
+        fontFamily: "SFU",
+        scaffoldBackgroundColor: Color(0xFFEFEFE3),
         textTheme: TextTheme(
           displayMedium: TextStyle(color: Colors.white),
         ),

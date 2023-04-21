@@ -1,7 +1,10 @@
 import 'dart:async';
 
+import 'package:ble_positioning_system/sastra-flow/screens/embeddedinfo.dart';
+import 'package:ble_positioning_system/sastra-flow/screens/sastrainfo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
+import 'package:lottie/lottie.dart';
 
 class CustomBLE extends StatefulWidget {
   const CustomBLE({Key? key}) : super(key: key);
@@ -85,13 +88,15 @@ class _CustomBLEState extends State<CustomBLE> {
   }
 
   void compareBeacon(ScanResult r1, ScanResult r2) {
-    if (r1.rssi > -45) {
-      isDisplayed[0] ? displaySnackBar("${r1.device.name}", "img1") : null;
+    if (r1.rssi > -60) {
+      isDisplayed[0] ? displaySnackBar("${r1.device.name}", "tifac") : null;
       isEnteredBuilding = true;
       isDisplayed[0] = false;
     }
-    if (r2.rssi > -45 && isEnteredBuilding) {
-      isDisplayed[1] ? displaySnackBar("${r2.device.name}", "shiva") : null;
+    if (r2.rssi > -60 && isEnteredBuilding) {
+      isDisplayed[1]
+          ? displaySnackBar("${r2.device.name}", "EmbeddedLab")
+          : null;
       isDisplayed[1] = false;
     }
     // if (r1.rssi > -40 && r2.rssi < -40) {
@@ -103,7 +108,7 @@ class _CustomBLEState extends State<CustomBLE> {
   }
 
   void displaySnackBar(String message, String imgPath,
-      {Color color = Colors.white, int durationInSeconds = 1}) {
+      {Color color = Colors.white, int durationInSeconds = 5}) {
     SnackBar snackBar = SnackBar(
       content: Column(
         children: [
@@ -120,10 +125,26 @@ class _CustomBLEState extends State<CustomBLE> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  imgPath == "tifac"
+                      ? Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SastraInfo()),
+                        )
+                      : Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => EmbeddedInfo()),
+                        );
+                  ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                },
                 child: Text("Open"),
               ),
-              ElevatedButton(onPressed: () {}, child: Text("Close")),
+              ElevatedButton(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                  },
+                  child: Text("Close")),
             ],
           )
         ],
@@ -158,7 +179,7 @@ class _CustomBLEState extends State<CustomBLE> {
             isScanning
                 ? FittedBox(
                     child: Container(
-                      margin: new EdgeInsets.all(16.0),
+                      margin: EdgeInsets.all(16.0),
                       child: CircularProgressIndicator(
                         color: Colors.black,
                         valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
@@ -181,10 +202,11 @@ class _CustomBLEState extends State<CustomBLE> {
               ),
               onPressed: () {
                 print("cancel");
-                isDisplayed[0] = true;
-                isDisplayed[1] = false;
                 flutterBlue.stopScan();
-                // scanSpecificDevice();
+                isDisplayed[0] = true;
+                isDisplayed[1] = true;
+                isEnteredBuilding = false;
+                setStream(getScanStream());
               },
             )
           ],
@@ -193,27 +215,28 @@ class _CustomBLEState extends State<CustomBLE> {
           padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
           child: Column(
             children: [
-              Container(
-                width: 150,
-                height: 50,
-                decoration: BoxDecoration(
-                  color:
-                      isScanning ? Colors.green.shade200 : Colors.red.shade200,
-                  border: Border.all(
-                    color: Colors.blue.shade400,
-                  ),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10),
-                  ),
+              Text(
+                "WELCOME TO SASTRA",
+                style: TextStyle(
+                  fontFamily: "RobotoMono",
+                  fontSize: 30,
+                  color: Color(0xFFAC5749),
                 ),
-                child: Center(
-                  child: Text(
-                    "${isScanning ? "Active" : "Inactive"}",
-                    textAlign: TextAlign.center,
-                  ),
-                ),
+                textAlign: TextAlign.center,
               ),
-              // Lottie.asset('assets/animations/scanning.json'),
+              SizedBox(
+                height: 20,
+              ),
+              Image.asset(
+                'assets/images/sastra1.png',
+                fit: BoxFit.cover,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Expanded(
+                  flex: 1,
+                  child: Lottie.asset('assets/animations/scanning.json')),
               Expanded(
                 child: ListTileTheme(
                   iconColor: Colors.red,
@@ -229,7 +252,7 @@ class _CustomBLEState extends State<CustomBLE> {
                         child: ListTile(
                             shape: RoundedRectangleBorder(
                               side: BorderSide(width: 2),
-                              borderRadius: BorderRadius.circular(20),
+                              borderRadius: BorderRadius.circular(10),
                             ),
                             leading: Text(
                               "${discoveredDevices[macAddresses[index]]?.rssi}",

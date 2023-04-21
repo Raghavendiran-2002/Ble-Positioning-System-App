@@ -30,14 +30,14 @@ class _NavScreenState extends State<NavScreen> {
       bottomNavigationBar: Theme(
         data: ThemeData(
           navigationBarTheme: NavigationBarThemeData(
-            indicatorColor: Colors.grey,
+            indicatorColor: Color(0xFFABBDAF),
             indicatorShape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
             ),
           ),
         ),
         child: NavigationBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Color(0xFFAC5749),
           destinations: [
             NavigationDestination(
               icon: Icon(
@@ -87,6 +87,7 @@ class _NavScreenState extends State<NavScreen> {
         },
         controller: _pageController,
         children: [
+          // SastraInfo(),
           CustomBLE(),
           HomeScreen(),
           Museum(),
