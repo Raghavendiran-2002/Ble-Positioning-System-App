@@ -6,6 +6,7 @@ import 'package:ble_positioning_system/sastra-flow/screens/sastrainfo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:lottie/lottie.dart';
 
 class CustomBLE extends StatefulWidget {
@@ -17,12 +18,14 @@ class CustomBLE extends StatefulWidget {
 
 class _CustomBLEState extends State<CustomBLE> {
   FlutterBluePlus flutterBlue = FlutterBluePlus.instance;
-  Timer? timer;
+  FlutterTts flutterTts = FlutterTts();
   List<String> macAddresses = ["60:77:71:8E:74:1B", "60:77:71:8E:63:12"];
   bool isScanning = false;
   Map<String, ScanResult> discoveredDevices = {};
   bool isEnteredBuilding = false;
   List<bool> isDisplayed = [true, true];
+  FlutterTts ftts = FlutterTts();
+
   @override
   void initState() {
     super.initState();
@@ -60,15 +63,14 @@ class _CustomBLEState extends State<CustomBLE> {
     }, onDone: () async {
       // Scan is finished ****************
       if (discoveredDevices.length == 2) {
-        print(discoveredDevices.length);
         compareBeacon(discoveredDevices[macAddresses[0]]!,
             discoveredDevices[macAddresses[1]]!);
       } else {
         if (discoveredDevices[macAddresses[0]]?.device.name != null &&
             discoveredDevices[macAddresses[0]]!.rssi > -45) {
           isDisplayed[0]
-              ? displaySnackBar(
-                  "${discoveredDevices[macAddresses[0]]!.device.name}", "img1")
+              ? displaySnackBar("Welcome to Sastra",
+                  "${discoveredDevices[macAddresses[0]]!.device.id}", "tifac")
               : null;
           isEnteredBuilding = true;
           isDisplayed[0] = false;
@@ -91,13 +93,16 @@ class _CustomBLEState extends State<CustomBLE> {
 
   void compareBeacon(ScanResult r1, ScanResult r2) {
     if (r1.rssi > -60) {
-      isDisplayed[0] ? displaySnackBar("${r1.device.name}", "tifac") : null;
+      isDisplayed[0]
+          ? displaySnackBar("Welcome to Sastra", "${r1.device.id}", "tifac")
+          : null;
       isEnteredBuilding = true;
       isDisplayed[0] = false;
     }
     if (r2.rssi > -60 && isEnteredBuilding) {
       isDisplayed[1]
-          ? displaySnackBar("${r2.device.name}", "EmbeddedLab")
+          ? displaySnackBar(
+              "Welcome to Embedded Lab", "${r2.device.id}", "EmbeddedLab")
           : null;
       isDisplayed[1] = false;
     }
@@ -109,14 +114,38 @@ class _CustomBLEState extends State<CustomBLE> {
     // }
   }
 
-  void displaySnackBar(String message, String imgPath,
+  void speakText(String voice) async {
+    var result = await ftts.speak(voice);
+    if (result == 1) {
+      //speaking
+    } else {
+      //not speaking
+    }
+  }
+
+  void displaySnackBar(String message, String beaconID, String imgPath,
       {int durationInSeconds = 5}) {
+    imgPath == "tifac"
+        ? speakText("Welcome to Sastra")
+        : speakText("Wecome to Embedded Lab");
     SnackBar snackBar = SnackBar(
       content: Column(
         children: [
           Text(
             message,
+            textAlign: TextAlign.center,
             style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+              color: Theming.instance.isLight
+                  ? Theming.instance.Light["snackBarTextColor"]
+                  : Theming.instance.Dark["snackBarTextColor"],
+            ),
+          ),
+          Text(
+            beaconID,
+            style: TextStyle(
+              fontSize: 10,
               color: Theming.instance.isLight
                   ? Theming.instance.Light["snackBarTextColor"]
                   : Theming.instance.Dark["snackBarTextColor"],
