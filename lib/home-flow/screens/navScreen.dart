@@ -102,6 +102,7 @@ class _NavScreenState extends State<NavScreen> {
         children: [
           // SastraInfo(),
           // Flutter_Blue_Plus(),
+          // EmbeddedInfo(),
           CustomBLE(),
           HomeScreen(),
           Museum(),

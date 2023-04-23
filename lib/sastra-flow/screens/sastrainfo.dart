@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 
 class SastraInfo extends StatefulWidget {
   const SastraInfo({Key? key}) : super(key: key);
@@ -8,6 +9,21 @@ class SastraInfo extends StatefulWidget {
 }
 
 class _SastraInfoState extends State<SastraInfo> {
+  FlutterTts ftts = FlutterTts();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    speakText(
+      "\nThe Centre for Information Super Highway is a part of the Centre of Relevance and Excellence (CORE) in Advanced Computing & Information Processing established by the Technology, Information, Forecasting & Assessment Council (TIFAC), Department of Science & Technology, Government of India. This facility at the School of Computing has been constantly upgraded to meet the academic and research needs of the entire campus. M/s Tata communications Lab for Cyber Security, Microsoft Technical Services Lab for Cloud, Tata Realty-Data Science Lab.",
+    );
+    super.initState();
+  }
+
+  void speakText(String voice) async {
+    await ftts.speak(voice);
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

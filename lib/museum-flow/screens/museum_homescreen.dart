@@ -1,3 +1,4 @@
+import 'package:ble_positioning_system/home-flow/services/theming.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
@@ -24,22 +25,25 @@ class _MuseumState extends State<Museum> {
                 "WELCOME TO MUSEUM",
                 // style: Theme.of(context).textTheme.displayMedium,
                 style: TextStyle(
-                    fontFamily: "RobotoMono",
-                    fontSize: 30,
-                    color: Colors.white),
+                  fontFamily: "RobotoMono",
+                  fontSize: 30,
+                  color: Theming.instance.isLight
+                      ? Theming.instance.Light["welcomeTextColor"]
+                      : Theming.instance.Dark["welcomeTextColor"],
+                ),
                 textAlign: TextAlign.center,
               ),
               SizedBox(
                 height: 30,
               ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                child: Text("${beaconAvailable}"),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                ),
-              ),
+              // Container(
+              //   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              //   child: Text("${beaconAvailable}"),
+              //   decoration: BoxDecoration(
+              //     color: Colors.white,
+              //     borderRadius: BorderRadius.circular(15),
+              //   ),
+              // ),
               SizedBox(
                 height: 30,
               ),

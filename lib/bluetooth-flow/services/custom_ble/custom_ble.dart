@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_tts/flutter_tts.dart';
-import 'package:lottie/lottie.dart';
 
 class CustomBLE extends StatefulWidget {
   const CustomBLE({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class CustomBLE extends StatefulWidget {
 
 class _CustomBLEState extends State<CustomBLE> {
   FlutterBluePlus flutterBlue = FlutterBluePlus.instance;
-  FlutterTts flutterTts = FlutterTts();
   List<String> macAddresses = ["60:77:71:8E:74:1B", "60:77:71:8E:63:12"];
   bool isScanning = false;
   Map<String, ScanResult> discoveredDevices = {};
@@ -48,6 +46,40 @@ class _CustomBLEState extends State<CustomBLE> {
     );
   }
 
+  // void getCalculatedDistance(double rssi1, int txAt1Meter) {
+  //   print(txAt1Meter);
+  //   var ratio = rssi1 * (1.0 / (txAt1Meter + 55));
+  //   if (ratio < 1.0) {
+  //     // return pow(ratio, 10);
+  //   } else {
+  //     // return (1.21112) * pow(ratio, 7.560861) + 0.251;
+  //   }
+  //   LogDistancePathLossModel(double rssiMeasured) {
+  //     rssi1 = rssiMeasured;
+  //   }
+  //
+  //   // RSSI
+  //   double rssi;
+  //   // Rssd0, rssi measured at chosen reference distance d0
+  //   double referenceRssi = -55;
+  //   //d0
+  //   double referenceDistance = 0.944;
+  //   // For line of sight in building
+  //   // n
+  //   double pathLossExponent = 0.3;
+  //   // Set to zero, as no large obstacle, used to mitigate for flat fading
+  //   // Sigma
+  //   double flatFadingMitigation = 0;
+  //   double getCalculatedDistance() {
+  //     double distance;
+  //     double rssiDiff = rssi1 - referenceRssi - flatFadingMitigation;
+  //     double i = LogDistancePathLossModel(20.23) as double;
+  //     double k = -(rssiDiff / 10 * pathLossExponent);
+  //     distance = referenceDistance * i;
+  //     return distance;
+  //   }
+  // }
+
   void addDevices(ScanResult result) {
     setState(() {
       discoveredDevices[result.device.id.toString()] = result;
@@ -62,20 +94,31 @@ class _CustomBLEState extends State<CustomBLE> {
       });
     }, onDone: () async {
       // Scan is finished ****************
-      if (discoveredDevices.length == 2) {
-        compareBeacon(discoveredDevices[macAddresses[0]]!,
-            discoveredDevices[macAddresses[1]]!);
-      } else {
-        if (discoveredDevices[macAddresses[0]]?.device.name != null &&
-            discoveredDevices[macAddresses[0]]!.rssi > -45) {
-          isDisplayed[0]
-              ? displaySnackBar("Welcome to Sastra",
-                  "${discoveredDevices[macAddresses[0]]!.device.id}", "tifac")
-              : null;
-          isEnteredBuilding = true;
-          isDisplayed[0] = false;
-        }
+      // if (discoveredDevices.length == 2) {
+      // compareBeacon(discoveredDevices[macAddresses[0]]!,
+      //     discoveredDevices[macAddresses[1]]!);
+      // } else {
+      if (discoveredDevices[macAddresses[0]]?.device.name != null &&
+          discoveredDevices[macAddresses[0]]!.rssi > -90) {
+        isDisplayed[0]
+            ? displaySnackBar("Welcome to Sastra",
+                "${discoveredDevices[macAddresses[0]]!.device.id}", "tifac")
+            : null;
+        isEnteredBuilding = true;
+        isDisplayed[0] = false;
+      } // EmbeddedLab
+      if (discoveredDevices[macAddresses[1]]?.device.name != null &&
+          discoveredDevices[macAddresses[1]]!.rssi > -90) {
+        isDisplayed[1]
+            ? displaySnackBar(
+                "Welcome to Embedded Lab",
+                "${discoveredDevices[macAddresses[1]]!.device.id}",
+                "EmbeddedLab")
+            : null;
+        isEnteredBuilding = true;
+        isDisplayed[1] = false;
       }
+      // }
       await flutterBlue.stopScan();
       setState(() {
         // discoveredDevices.clear();
@@ -92,14 +135,15 @@ class _CustomBLEState extends State<CustomBLE> {
   }
 
   void compareBeacon(ScanResult r1, ScanResult r2) {
-    if (r1.rssi > -60) {
+    if (r1.rssi > -90) {
       isDisplayed[0]
           ? displaySnackBar("Welcome to Sastra", "${r1.device.id}", "tifac")
           : null;
-      isEnteredBuilding = true;
+      // isEnteredBuilding = true;
       isDisplayed[0] = false;
     }
-    if (r2.rssi > -60 && isEnteredBuilding) {
+    // if (r2.rssi > -60 && isEnteredBuilding) {
+    if (r2.rssi > -90) {
       isDisplayed[1]
           ? displaySnackBar(
               "Welcome to Embedded Lab", "${r2.device.id}", "EmbeddedLab")
@@ -285,9 +329,10 @@ class _CustomBLEState extends State<CustomBLE> {
               SizedBox(
                 height: 20,
               ),
-              Expanded(
-                  flex: 1,
-                  child: Lottie.asset('assets/animations/scanning.json')),
+              // Expanded(
+              //     flex: 1,
+              //     child: Lottie.asset('assets/animations/scanning.json')),  indoormap.png
+
               Expanded(
                 child: ListTileTheme(
                   // iconColor: Colors.red,

@@ -1,3 +1,4 @@
+import 'package:ble_positioning_system/home-flow/services/theming.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 
@@ -16,9 +17,18 @@ class BluetoothDeviceListEntry extends ListTile {
             Icons.devices,
             color: Colors.grey,
           ), // @TODO . !BluetoothClass! class aware icon
-          title: Text(device.name ?? "", style: TextStyle(color: Colors.white)),
+          title: Text(device.name ?? "",
+              style: TextStyle(
+                color: Theming.instance.isLight
+                    ? Theming.instance.Light["welcomeTextColor"]
+                    : Theming.instance.Dark["welcomeTextColor"],
+              )),
           subtitle: Text(device.address.toString(),
-              style: TextStyle(color: Colors.white)),
+              style: TextStyle(
+                color: Theming.instance.isLight
+                    ? Theming.instance.Light["welcomeTextColor"]
+                    : Theming.instance.Dark["welcomeTextColor"],
+              )),
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[

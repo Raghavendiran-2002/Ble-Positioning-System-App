@@ -7,6 +7,8 @@ import 'package:flutter_reactive_ble/flutter_reactive_ble.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
+import '../services/theming.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -206,20 +208,25 @@ class _HomeScreenState extends State<HomeScreen> {
             Text(
               "WELCOME TO SASTRA",
               style: TextStyle(
-                  fontFamily: "RobotoMono", fontSize: 30, color: Colors.white),
+                fontFamily: "RobotoMono",
+                fontSize: 30,
+                color: Theming.instance.isLight
+                    ? Theming.instance.Light["welcomeTextColor"]
+                    : Theming.instance.Dark["welcomeTextColor"],
+              ),
               textAlign: TextAlign.center,
             ),
             SizedBox(
               height: 30,
             ),
-            Container(
-              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              child: Text("${beaconAvailable}"),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-              ),
-            ),
+            // Container(
+            //   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+            //   child: Text("${beaconAvailable}"),
+            //   decoration: BoxDecoration(
+            //     color: Colors.white,
+            //     borderRadius: BorderRadius.circular(15),
+            //   ),
+            // ),
             SizedBox(
               height: 30,
             ),
