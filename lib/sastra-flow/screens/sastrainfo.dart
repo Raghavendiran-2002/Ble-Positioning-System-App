@@ -1,3 +1,4 @@
+import 'package:ble_positioning_system/home-flow/services/theming.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
@@ -28,7 +29,9 @@ class _SastraInfoState extends State<SastraInfo> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Theming.instance.isLight
+            ? Theming.instance.Light["appBarBgColor"]
+            : Theming.instance.Dark["appBarBgColor"],
         body: Column(
           children: [
             // Container(
@@ -46,7 +49,9 @@ class _SastraInfoState extends State<SastraInfo> {
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(25.0),
                       topLeft: Radius.circular(25.0)),
-                  color: Color(0xFFEFEFE3),
+                  color: Theming.instance.isLight
+                      ? Theming.instance.Light["appBarBgColor"]
+                      : Theming.instance.Dark["appBarBgColor"],
                 ),
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10),

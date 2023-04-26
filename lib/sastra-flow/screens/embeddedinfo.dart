@@ -1,3 +1,4 @@
+import 'package:ble_positioning_system/home-flow/services/theming.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
@@ -26,10 +27,19 @@ class _EmbeddedInfoState extends State<EmbeddedInfo> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color(0xFFC9C5B4),
+        backgroundColor: Theming.instance.isLight
+            ? Theming.instance.Light["appBarBgColor"]
+            : Theming.instance.Dark["appBarBgColor"],
         body: Column(
           children: [
             // Container(
+            // ClipRRect(
+            //   borderRadius: BorderRadius.circular(20), // Image border
+            //   child: SizedBox.fromSize(
+            //     size: Size.fromRadius(48), // Image radius
+            //     child: Image.network('imageUrl', fit: BoxFit.cover),
+            //   ),
+            // ),
             Image.asset(
               'assets/images/EmbeddedLab.png',
               fit: BoxFit.cover,
@@ -44,7 +54,9 @@ class _EmbeddedInfoState extends State<EmbeddedInfo> {
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(25.0),
                       topLeft: Radius.circular(25.0)),
-                  color: Color(0xFFEFEFE3),
+                  color: Theming.instance.isLight
+                      ? Theming.instance.Light["appBarBgColor"]
+                      : Theming.instance.Dark["appBarBgColor"],
                 ),
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10),
@@ -52,6 +64,14 @@ class _EmbeddedInfoState extends State<EmbeddedInfo> {
                     scrollDirection: Axis.vertical, //.horizontal
                     child: Column(
                       children: [
+                        Padding(
+                          padding: EdgeInsets.only(top: 15),
+                          child: Text(
+                            "Embedded System Lab",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 20),
+                          ),
+                        ),
                         Text(
                           "\nThe Centre for Information Super Highway is a part of the Centre of Relevance and Excellence (CORE) in Advanced Computing & Information Processing established by the Technology, Information, Forecasting & Assessment Council (TIFAC), Department of Science & Technology, Government of India. This facility at the School of Computing has been constantly upgraded to meet the academic and research needs of the entire campus. M/s Tata communications Lab for Cyber Security, Microsoft Technical Services Lab for Cloud, Tata Realty-Data Science Lab.",
                         ),

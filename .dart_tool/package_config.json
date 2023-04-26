@@ -416,6 +416,18 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "syncfusion_flutter_charts",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/syncfusion_flutter_charts-21.1.41",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "syncfusion_flutter_core",
+      "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/syncfusion_flutter_core-21.1.41",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "term_glyph",
       "rootUri": "file:///Users/raghavendiran/.pub-cache/hosted/pub.dev/term_glyph-1.2.1",
       "packageUri": "lib/",
@@ -446,7 +458,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-04-22T00:33:27.387432Z",
+  "generated": "2023-04-26T04:14:23.108192Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }

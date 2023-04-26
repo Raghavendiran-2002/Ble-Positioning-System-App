@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:ble_positioning_system/home-flow/services/theming.dart';
 import 'package:ble_positioning_system/sastra-flow/screens/embeddedinfo.dart';
@@ -7,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:syncfusion_flutter_charts/charts.dart';
 
 class CustomBLE extends StatefulWidget {
   const CustomBLE({Key? key}) : super(key: key);
@@ -23,9 +25,12 @@ class _CustomBLEState extends State<CustomBLE> {
   bool isEnteredBuilding = false;
   List<bool> isDisplayed = [true, true];
   FlutterTts ftts = FlutterTts();
-
+  late List<LiveData> chartData;
+  late ChartSeriesController _chartSeriesController;
   @override
   void initState() {
+    chartData = getChartData();
+    Timer.periodic(const Duration(seconds: 1), updateDataSource);
     super.initState();
     setStream(getScanStream());
   }
@@ -173,6 +178,7 @@ class _CustomBLEState extends State<CustomBLE> {
         ? speakText("Welcome to Sastra")
         : speakText("Wecome to Embedded Lab");
     SnackBar snackBar = SnackBar(
+      elevation: 10.0,
       content: Column(
         children: [
           Text(
@@ -195,11 +201,11 @@ class _CustomBLEState extends State<CustomBLE> {
                   : Theming.instance.Dark["snackBarTextColor"],
             ),
           ),
-          Image.asset(
-            'assets/images/${imgPath}.png',
-            width: 200,
-            height: 200,
-          ),
+          // Image.asset(
+          //   'assets/images/${imgPath}.png',
+          //   width: 50,
+          //   height: 50,
+          // ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -250,7 +256,7 @@ class _CustomBLEState extends State<CustomBLE> {
         borderRadius: BorderRadius.circular(10),
       ),
       duration: Duration(seconds: durationInSeconds),
-      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
     );
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
@@ -264,7 +270,7 @@ class _CustomBLEState extends State<CustomBLE> {
               ? Theming.instance.Light["appBarBgColor"]
               : Theming.instance.Dark["appBarBgColor"],
           title: Text(
-            'Beacon 🛸',
+            'WELCOME TO SASTRA 🛸',
             style: TextStyle(
                 color: Theming.instance.isLight
                     ? Theming.instance.Light["appBarTextColor"]
@@ -276,14 +282,14 @@ class _CustomBLEState extends State<CustomBLE> {
             isScanning
                 ? FittedBox(
                     child: SpinKitWave(
-                      color: Color(0xFFB99E6D),
+                      color: Color(0xFF6F50C3),
                       size: 15.0,
                     ),
                   )
                 : IconButton(
                     icon: Icon(
                       Icons.replay,
-                      color: Colors.black,
+                      color: Color(0xFF6F50C3),
                     ),
                     onPressed: () {
                       flutterBlue.stopScan();
@@ -292,7 +298,7 @@ class _CustomBLEState extends State<CustomBLE> {
             IconButton(
               icon: Icon(
                 Icons.settings_bluetooth_rounded,
-                color: Colors.black,
+                color: Color(0xFF6F50C3),
               ),
               onPressed: () {
                 print("cancel");
@@ -309,18 +315,18 @@ class _CustomBLEState extends State<CustomBLE> {
           padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
           child: Column(
             children: [
-              Text(
-                "WELCOME TO SASTRA",
-                style: TextStyle(
-                  fontSize: 30,
-                  color: Theming.instance.isLight
-                      ? Theming.instance.Light["welcomeTextColor"]
-                      : Theming.instance.Dark["welcomeTextColor"],
-                ),
-                textAlign: TextAlign.center,
-              ),
+              // Text(
+              //   "WELCOME TO SASTRA",
+              //   style: TextStyle(
+              //     fontSize: 30,
+              //     color: Theming.instance.isLight
+              //         ? Theming.instance.Light["welcomeTextColor"]
+              //         : Theming.instance.Dark["welcomeTextColor"],
+              //   ),
+              //   textAlign: TextAlign.center,
+              // ),
               SizedBox(
-                height: 20,
+                height: 10,
               ),
               Image.asset(
                 'assets/images/sastra1.png',
@@ -329,10 +335,6 @@ class _CustomBLEState extends State<CustomBLE> {
               SizedBox(
                 height: 20,
               ),
-              // Expanded(
-              //     flex: 1,
-              //     child: Lottie.asset('assets/animations/scanning.json')),  indoormap.png
-
               Expanded(
                 child: ListTileTheme(
                   // iconColor: Colors.red,
@@ -343,13 +345,14 @@ class _CustomBLEState extends State<CustomBLE> {
                   style: ListTileStyle.list,
                   dense: true,
                   child: ListView.builder(
+                    shrinkWrap: true,
                     itemCount: macAddresses.length,
                     itemBuilder: (BuildContext context, int index) {
                       return Padding(
                         padding: EdgeInsets.only(top: 10, bottom: 10),
                         child: ListTile(
                           shape: RoundedRectangleBorder(
-                            side: BorderSide(width: 2),
+                            // side: BorderSide(width: 2),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           leading:
@@ -363,7 +366,7 @@ class _CustomBLEState extends State<CustomBLE> {
                               discoveredDevices[macAddresses[index]] == null
                                   ? FittedBox(
                                       child: SpinKitWave(
-                                        color: Color(0xFFAC5749),
+                                        color: Color(0xFF6F50C3),
                                         size: 15.0,
                                       ),
                                     )
@@ -394,10 +397,69 @@ class _CustomBLEState extends State<CustomBLE> {
                   ),
                 ),
               ),
+              // SfCartesianChart(
+              //     series: <LineSeries<LiveData, int>>[
+              //       LineSeries<LiveData, int>(
+              //         onRendererCreated: (ChartSeriesController controller) {
+              //           _chartSeriesController = controller;
+              //         },
+              //         dataSource: chartData,
+              //         color: const Color.fromRGBO(192, 108, 132, 1),
+              //         xValueMapper: (LiveData sales, _) => sales.time,
+              //         yValueMapper: (LiveData sales, _) => sales.speed,
+              //       )
+              //     ],
+              //     primaryXAxis: NumericAxis(
+              //         majorGridLines: const MajorGridLines(width: 0),
+              //         edgeLabelPlacement: EdgeLabelPlacement.shift,
+              //         interval: 3,
+              //         title: AxisTitle(text: 'Time (seconds)')),
+              //     primaryYAxis: NumericAxis(
+              //         axisLine: const AxisLine(width: 0),
+              //         majorTickLines: const MajorTickLines(size: 0),
+              //         title: AxisTitle(text: 'Internet speed (Mbps)'))),
             ],
           ),
         ),
       ),
     );
   }
+
+  int time = 19;
+  void updateDataSource(Timer timer) {
+    chartData.add(LiveData(time++, (math.Random().nextInt(60) + 30)));
+    chartData.removeAt(0);
+    _chartSeriesController.updateDataSource(
+        addedDataIndex: chartData.length - 1, removedDataIndex: 0);
+  }
+
+  List<LiveData> getChartData() {
+    return <LiveData>[
+      LiveData(0, 42),
+      LiveData(1, 47),
+      LiveData(2, 43),
+      LiveData(3, 49),
+      LiveData(4, 54),
+      LiveData(5, 41),
+      LiveData(6, 58),
+      LiveData(7, 51),
+      LiveData(8, 98),
+      LiveData(9, 41),
+      LiveData(10, 53),
+      LiveData(11, 72),
+      LiveData(12, 86),
+      LiveData(13, 52),
+      LiveData(14, 94),
+      LiveData(15, 92),
+      LiveData(16, 86),
+      LiveData(17, 72),
+      LiveData(18, 94)
+    ];
+  }
+}
+
+class LiveData {
+  LiveData(this.time, this.speed);
+  final int time;
+  final num speed;
 }
