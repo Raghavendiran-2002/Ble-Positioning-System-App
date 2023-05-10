@@ -50,8 +50,8 @@ class MyApp extends StatelessWidget {
         "flutterBluePlus": (context) => Flutter_Blue_Plus(),
         "museum": (context) => Museum(),
         "GeoFencing": (context) => GeoFencing(),
-        "flutter_bluetooth_serial": (context) => Flutter_Bluetooth_Serial(),
-        "nwarehouse": (context) => NwareHouseScreen(),
+        // "flutter_bluetooth_serial": (context) => Flutter_Bluetooth_Serial(),
+        // "nwarehouse": (context) => NwareHouseScreen(),
       },
     );
   }
