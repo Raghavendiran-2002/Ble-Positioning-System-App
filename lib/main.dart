@@ -13,7 +13,6 @@ import 'firebase_options.dart';
 import 'geofencing-flow/screens/geofencing.dart';
 import 'home-flow/screens/navScreen.dart';
 import 'museum-flow/screens/museum_homescreen.dart';
-import 'nwarehouse-flow/screens/nwarehousescreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -51,7 +50,7 @@ class MyApp extends StatelessWidget {
         "museum": (context) => Museum(),
         "GeoFencing": (context) => GeoFencing(),
         "flutter_bluetooth_serial": (context) => Flutter_Bluetooth_Serial(),
-        "nwarehouse": (context) => NwareHouseScreen(),
+        // "nwarehouse": (context) => NwareHouseScreen(),
       },
     );
   }

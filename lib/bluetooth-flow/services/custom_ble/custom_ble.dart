@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math' as math;
 
 import 'package:ble_positioning_system/home-flow/services/theming.dart';
 import 'package:ble_positioning_system/sastra-flow/screens/embeddedinfo.dart';
@@ -8,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_tts/flutter_tts.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 
 class CustomBLE extends StatefulWidget {
   const CustomBLE({Key? key}) : super(key: key);
@@ -25,12 +23,8 @@ class _CustomBLEState extends State<CustomBLE> {
   bool isEnteredBuilding = false;
   List<bool> isDisplayed = [true, true];
   FlutterTts ftts = FlutterTts();
-  late List<LiveData> chartData;
-  late ChartSeriesController _chartSeriesController;
   @override
   void initState() {
-    chartData = getChartData();
-    Timer.periodic(const Duration(seconds: 1), updateDataSource);
     super.initState();
     setStream(getScanStream());
   }
@@ -55,9 +49,9 @@ class _CustomBLEState extends State<CustomBLE> {
   //   print(txAt1Meter);
   //   var ratio = rssi1 * (1.0 / (txAt1Meter + 55));
   //   if (ratio < 1.0) {
-  //     // return pow(ratio, 10);
+  //     return pow(ratio, 10);
   //   } else {
-  //     // return (1.21112) * pow(ratio, 7.560861) + 0.251;
+  //     return (1.21112) * pow(ratio, 7.560861) + 0.251;
   //   }
   //   LogDistancePathLossModel(double rssiMeasured) {
   //     rssi1 = rssiMeasured;
@@ -270,7 +264,7 @@ class _CustomBLEState extends State<CustomBLE> {
               ? Theming.instance.Light["appBarBgColor"]
               : Theming.instance.Dark["appBarBgColor"],
           title: Text(
-            'WELCOME TO SASTRA 🛸',
+            'Beaconnzzz ',
             style: TextStyle(
                 color: Theming.instance.isLight
                     ? Theming.instance.Light["appBarTextColor"]
@@ -355,13 +349,15 @@ class _CustomBLEState extends State<CustomBLE> {
                             // side: BorderSide(width: 2),
                             borderRadius: BorderRadius.circular(10),
                           ),
-                          leading:
-                              discoveredDevices[macAddresses[index]] == null
-                                  ? null
-                                  : Text(
-                                      "${discoveredDevices[macAddresses[index]]?.rssi}",
-                                      style: TextStyle(color: Colors.green),
-                                    ),
+                          leading: discoveredDevices[macAddresses[index]] ==
+                                  null
+                              ? null
+                              : Text(
+                                  "${discoveredDevices[macAddresses[index]]?.rssi}",
+                                  style: _computeTextStyle(
+                                      (discoveredDevices[macAddresses[index]]
+                                          ?.rssi)!),
+                                ),
                           trailing:
                               discoveredDevices[macAddresses[index]] == null
                                   ? FittedBox(
@@ -397,27 +393,6 @@ class _CustomBLEState extends State<CustomBLE> {
                   ),
                 ),
               ),
-              // SfCartesianChart(
-              //     series: <LineSeries<LiveData, int>>[
-              //       LineSeries<LiveData, int>(
-              //         onRendererCreated: (ChartSeriesController controller) {
-              //           _chartSeriesController = controller;
-              //         },
-              //         dataSource: chartData,
-              //         color: const Color.fromRGBO(192, 108, 132, 1),
-              //         xValueMapper: (LiveData sales, _) => sales.time,
-              //         yValueMapper: (LiveData sales, _) => sales.speed,
-              //       )
-              //     ],
-              //     primaryXAxis: NumericAxis(
-              //         majorGridLines: const MajorGridLines(width: 0),
-              //         edgeLabelPlacement: EdgeLabelPlacement.shift,
-              //         interval: 3,
-              //         title: AxisTitle(text: 'Time (seconds)')),
-              //     primaryYAxis: NumericAxis(
-              //         axisLine: const AxisLine(width: 0),
-              //         majorTickLines: const MajorTickLines(size: 0),
-              //         title: AxisTitle(text: 'Internet speed (Mbps)'))),
             ],
           ),
         ),
@@ -425,41 +400,30 @@ class _CustomBLEState extends State<CustomBLE> {
     );
   }
 
-  int time = 19;
-  void updateDataSource(Timer timer) {
-    chartData.add(LiveData(time++, (math.Random().nextInt(60) + 30)));
-    chartData.removeAt(0);
-    _chartSeriesController.updateDataSource(
-        addedDataIndex: chartData.length - 1, removedDataIndex: 0);
+  static TextStyle _computeTextStyle(int rssi) {
+    /**/ if (rssi >= -35)
+      return TextStyle(color: Colors.greenAccent[700]);
+    else if (rssi >= -45)
+      return TextStyle(
+          color: Color.lerp(
+              Colors.greenAccent[700], Colors.lightGreen, -(rssi + 35) / 10));
+    else if (rssi >= -55)
+      return TextStyle(
+          color: Color.lerp(
+              Colors.lightGreen, Colors.lime[600], -(rssi + 45) / 10));
+    else if (rssi >= -65)
+      return TextStyle(
+          color: Color.lerp(Colors.lime[600], Colors.amber, -(rssi + 55) / 10));
+    else if (rssi >= -75)
+      return TextStyle(
+          color: Color.lerp(
+              Colors.amber, Colors.deepOrangeAccent, -(rssi + 65) / 10));
+    else if (rssi >= -85)
+      return TextStyle(
+          color: Color.lerp(
+              Colors.deepOrangeAccent, Colors.redAccent, -(rssi + 75) / 10));
+    else
+      /*code symmetry*/
+      return TextStyle(color: Colors.redAccent);
   }
-
-  List<LiveData> getChartData() {
-    return <LiveData>[
-      LiveData(0, 42),
-      LiveData(1, 47),
-      LiveData(2, 43),
-      LiveData(3, 49),
-      LiveData(4, 54),
-      LiveData(5, 41),
-      LiveData(6, 58),
-      LiveData(7, 51),
-      LiveData(8, 98),
-      LiveData(9, 41),
-      LiveData(10, 53),
-      LiveData(11, 72),
-      LiveData(12, 86),
-      LiveData(13, 52),
-      LiveData(14, 94),
-      LiveData(15, 92),
-      LiveData(16, 86),
-      LiveData(17, 72),
-      LiveData(18, 94)
-    ];
-  }
-}
-
-class LiveData {
-  LiveData(this.time, this.speed);
-  final int time;
-  final num speed;
 }

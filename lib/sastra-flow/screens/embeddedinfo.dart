@@ -41,7 +41,7 @@ class _EmbeddedInfoState extends State<EmbeddedInfo> {
             //   ),
             // ),
             Image.asset(
-              'assets/images/EmbeddedLab.png',
+              'assets/images/lab.png',
               fit: BoxFit.cover,
             ),
             // ),
@@ -67,26 +67,26 @@ class _EmbeddedInfoState extends State<EmbeddedInfo> {
                         Padding(
                           padding: EdgeInsets.only(top: 15),
                           child: Text(
-                            "Embedded System Lab",
+                            "EMBEDDED SYSTEM LAB",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 20),
                           ),
                         ),
                         Text(
-                          "\nThe Centre for Information Super Highway is a part of the Centre of Relevance and Excellence (CORE) in Advanced Computing & Information Processing established by the Technology, Information, Forecasting & Assessment Council (TIFAC), Department of Science & Technology, Government of India. This facility at the School of Computing has been constantly upgraded to meet the academic and research needs of the entire campus. M/s Tata communications Lab for Cyber Security, Microsoft Technical Services Lab for Cloud, Tata Realty-Data Science Lab.",
+                          "\nThe Centre for Information Super Highway is a part of the Centre of Relevance and Excellence (CORE) in Advanced Computing & Information Processing established by the Technology, Information, Forecasting & Assessment Council (TIFAC), Department of Science & Technology, Government of India. This facility at the School of Computing has been constantly upgraded to meet the academic and research needs of the entire campus. M/s Tata communications Lab for Cyber Security, Microsoft Technical Services Lab for Cloud, Tata Realty-Data Science Lab.\n",
                         ),
                         Image.asset(
                           'assets/images/tifacimg1.png',
                           fit: BoxFit.cover,
                         ),
                         Text(
-                            "ESA/Keil MCB2140-ED ARM7 Single Board Evaluation Board -Philips LPC2140R"),
+                            "ESA/Keil MCB2140-ED ARM7 Single Board Evaluation Board -Philips LPC2140R\n"),
                         Image.asset(
                           'assets/images/tifacimg2.png',
                           fit: BoxFit.cover,
                         ),
                         Text(
-                            "Waspmote WiFi on-chip Node, Expansion Board, Gases Sensor Board, Agriculture Sensor Board PRO, Advanced video camera sensor board, Events Sensor Board, Prototype Sensor Board, Gateway 802.15.4 2dBi, Radiation Sensor Board + Geiger Tube, Meshlium 4G 802.15.4 AP EU, Water mark Soil moisture sensor with 1.5 probe, Leaf Wetness Sensor, Soil/Water Temperature Sensor (Pt-1000), Air pollutants-II (NH3, H2S,CH3-Ch2-OH, C6H5CH3 Gas Sensor,"),
+                            "Waspmote WiFi on-chip Node, Expansion Board, Gases Sensor Board, Agriculture Sensor Board PRO, Advanced video camera sensor board, Events Sensor Board, Prototype Sensor Board, Gateway 802.15.4 2dBi, Radiation Sensor Board + Geiger Tube, Meshlium 4G 802.15.4 AP EU, Water mark Soil moisture sensor with 1.5 probe, Leaf Wetness Sensor, Soil/Water Temperature Sensor (Pt-1000), Air pollutants-II (NH3, H2S,CH3-Ch2-OH, C6H5CH3 Gas Sensor,\n"),
                         Image.asset(
                           'assets/images/tifacimg2.png',
                           fit: BoxFit.cover,
