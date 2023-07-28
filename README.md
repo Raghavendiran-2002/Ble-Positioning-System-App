@@ -1,7 +1,5 @@
 # BLE Beacon-Based Proximity Detection for Enhanced Museum Experiences
 
-A new Flutter project.
-
 ## Getting Started
 
 - The traditional museum experience can be limited and passive,leading to a disconnection from cultural artifacts and art on display.
@@ -27,7 +25,7 @@ A new Flutter project.
 
 ![alt text](https://firebasestorage.googleapis.com/v0/b/ble-positioning-system.appspot.com/o/Screenshot%202023-07-28%20at%209.57.54%20PM.png?alt=media&token=464e3e9f-69c7-420e-9c04-c84cd0b96228)
 
-![alt text] (https://firebasestorage.googleapis.com/v0/b/ble-positioning-system.appspot.com/o/Screenshot%202023-07-28%20at%209.58.04%20PM.png?alt=media&token=012c0e9f-8d1d-4c9a-ba59-53f1caadb509)
+![alt text](https://firebasestorage.googleapis.com/v0/b/ble-positioning-system.appspot.com/o/Screenshot%202023-07-28%20at%209.58.04%20PM.png?alt=media&token=012c0e9f-8d1d-4c9a-ba59-53f1caadb509)
 
 ## How to Build ?
 
